@@ -222,6 +222,7 @@ img {
 .navbar .navbar-icon object {
     height: 100%;
     padding: 5px;
+    pointer-events: none;
 }
 .navbar .navbar-icon img{
     display: none;
@@ -236,6 +237,9 @@ img {
     cursor: pointer;
     z-index: 99;
 }
+.navbar .navbar-icon a {
+    display: inline-block;  
+  }
 .navbar .row,
 .navbar .col-md-8{
     height: 100%;
@@ -883,6 +887,53 @@ img {
 #galerie-photo .galerie-slideshow-item{
    float: left; 
    position: relative;
+}
+
+
+
+/* Top Header Section
+* --------------------------------------- */
+.top-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.top-header img {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.top-header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 2;
+}
+.top-header .header-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    z-index: 4;
+    margin: auto;
+    text-align: center;
 }
 
 /* Footer

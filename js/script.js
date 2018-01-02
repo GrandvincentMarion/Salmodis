@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-        anchors: ['salmodis', 'qui-sommes-nous-?', 'nos-produits-d-aquaculture', 'nos-produits-salaison', 'notre-galerie-photo', 'contact'],
+        anchors: [],
         menu: '#menu',
         css3:true,
         autoScrolling: true,
