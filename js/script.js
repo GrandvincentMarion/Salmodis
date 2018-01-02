@@ -10,8 +10,8 @@ $(document).ready(function() {
 		navigationTooltips: ['Salmodis', 'Qui sommes-nous ?', "Produits d'aquaculture", 'Produits salaison', 'Galerie photo', 'Contact'],
 
         onLeave: function(index, nextIndex, direction){
-
-            //sticky header
+            
+            //sticky header | every page
             var header = $('.navbar');
             if(nextIndex > 1) {
                 header.addClass('sticky');
@@ -21,33 +21,39 @@ $(document).ready(function() {
             }
 
             // color of navigation
-            if (nextIndex == 2 || nextIndex == 4 || nextIndex == 5) {
+            if ( $('.section').eq(nextIndex-1).hasClass('black-dot') === true) {
                 $('#fp-nav').addClass('dark');
             } 
-            else {
+            else if ($('.section').eq(nextIndex-1).hasClass('black-dot') === false){
                 $('#fp-nav').removeClass('dark');
             }
 
-            // animation section-2
-            if (nextIndex == 2) {
-                setInterval(function(){
-                    $('#entreprise-section .card .col-md-3').removeClass('active')
-                }, 200);
+            //animation page index
+            if (  $('#fullpage').hasClass('index') === true ) {
+
+                // animation section-2
+                if (nextIndex == 2) {
+                    setInterval(function(){
+                        $('#entreprise-section .card .col-md-3').removeClass('active')
+                    }, 200);
+                }
+
+                // animation section-3
+                if (nextIndex == 3) {
+                    setInterval(function(){
+                        $('#produits-aquaculture .navbar-middle ul').removeClass('active')
+                    }, 200);
+                }
+
+                // animation section-3
+                if (nextIndex == 4) {
+                    setInterval(function(){
+                        $('#produits-salaison .navbar-middle ul').removeClass('active')
+                    }, 200);
+                }
+
             }
 
-            // animation section-3
-            if (nextIndex == 3) {
-                setInterval(function(){
-                    $('#produits-aquaculture .navbar-middle ul').removeClass('active')
-                }, 200);
-            }
-
-            // animation section-3
-            if (nextIndex == 4) {
-                setInterval(function(){
-                    $('#produits-salaison .navbar-middle ul').removeClass('active')
-                }, 200);
-            }
         },
 
     });

@@ -239,6 +239,7 @@ img {
 }
 .navbar .navbar-icon a {
     display: inline-block;  
+    height: 100%;
   }
 .navbar .row,
 .navbar .col-md-8{
@@ -579,9 +580,6 @@ img {
 
 /* Section 3
 * --------------------------------------- */
-#produits-aquaculture{
-   
-}
 #produits-aquaculture h3{
     text-align: center;
     color: #2d2d2d;
@@ -950,9 +948,6 @@ img {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
-}
-#footer ul {
-
 }
 #footer ul li{
     font-family: 'HelveticaNeue-Light';
