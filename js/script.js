@@ -7,7 +7,7 @@ $(document).ready(function() {
         responsiveWidth: 767,
         navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['Salmodis', 'Qui sommes-nous ?', "Produits d'aqua", 'Produits salaison', 'Galerie photo', 'Contact'],
+		navigationTooltips: ['Salmodis', 'Qui sommes-nous ?', "Produits d'aquaculture", 'Produits salaison', 'Galerie photo', 'Contact'],
 
         onLeave: function(index, nextIndex, direction){
 
