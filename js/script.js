@@ -1,14 +1,21 @@
 $(document).ready(function() {
+    var anchors = [];
+    $('.section').each(function(test) {
+        var anchorSection = $(this).data('name'); 
+        var parts = anchorSection.split();
+        anchors.push(parts[0]);
+    });
+
 	$('#fullpage').fullpage({
         anchors: [],
-        menu: '#menu',
         css3:true,
         autoScrolling: true,
         responsiveWidth: 767,
         navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['Salmodis', 'Qui sommes-nous ?', "Produits d'aquaculture", 'Produits salaison', 'Galerie photo', 'Contact'],
+		navigationTooltips: anchors,
 
+ 
         onLeave: function(index, nextIndex, direction){
             
             //sticky header | every page
@@ -83,9 +90,12 @@ menuResponsive();
 // slider first section
 function fullSlideshow() {
     var background = document.querySelectorAll('.full-background img.background');
+    if (background.length === 0) {
+       return
+    }
     var backgroundLength = background.length
     var index = 0;
-
+    
     setTimeout(function(){
         background[index].classList.add('active');
     }, 40);
@@ -97,14 +107,20 @@ function fullSlideshow() {
             index = 0
         }
         background[index].classList.add('active')
-    }, 5000);
+    }, 5000);   
+    
+   
+
 }
 fullSlideshow()
 
 
 function numberOfYears() {
-    var years = document.querySelector('.header-title span').firstChild.nodeValue;
-
+    var year = document.querySelector('.header-title span')
+    if (year === null) {
+        return
+    }
+    var years = year.firstChild.nodeValue;
     setInterval(function(){
         years--
         if (years >= 1978) {
@@ -121,6 +137,9 @@ numberOfYears();
 
 function movingSlider() {
     var slider      = document.querySelector('.galerie-slideshow');
+    if (slider === null) {
+        return
+    }
     var sliderITEM  = document.querySelectorAll('.galerie-slideshow-item');
     var sliderPOS   = slider.offsetLeft;
     var index       = 0;
