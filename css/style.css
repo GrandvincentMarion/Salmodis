@@ -94,6 +94,18 @@ h3{
     font-size: 60px;
     font-family: 'Novecentosanswide-Bold';
 }
+h4 {
+    font-size: 42px;
+    color: #333333;
+    text-transform: uppercase;
+    font-family: 'Novecentosanswide-Bold';
+    text-align: center;
+}
+h6 {
+    font-size: 18px;
+    font-family: 'Novecentosanswide-Bold';
+    color: #333333;
+}
 p {
     font-family: 'HelveticaNeue-Light';
     margin: 0;
@@ -101,6 +113,7 @@ p {
     color: #000000;
     font-size: 15px;
     letter-spacing: 1px;
+    line-height: 1.4;
 }
 ul,li {
     list-style: none;
@@ -222,7 +235,6 @@ img {
 .navbar .navbar-icon object {
     height: 100%;
     padding: 5px;
-    pointer-events: none;
 }
 .navbar .navbar-icon img{
     display: none;
@@ -302,6 +314,7 @@ img {
     margin-bottom: 25px;
     font-size: 13px;
 }
+
 #fp-nav.right {
     right: 1.5%;
 }
@@ -375,6 +388,54 @@ img {
     height: inherit;
     margin: auto;
 }
+
+.title-center {
+    margin-top: 10%;
+    position: relative;
+}
+.title-center h4 {
+    z-index: 1;
+    position: absolute;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 35px;
+}
+.title-center:before {
+    content:"";
+    height: 1px;
+    width: 100%;
+    background-color: #d0d0cf;
+    position: absolute;
+    top: 50%;
+}
+.title-center.in-section {
+    position: relative;
+    margin-top: 0%;
+    margin-bottom: 3%;
+}
+.title-center.in-section h4{
+    position: relative;
+    left: auto;
+    transform: inherit;
+    padding: 0px 35px;
+}
+.title-center.in-section:before{
+    content: "";
+    height: 1px;
+    width: 1000%;
+    background-color: #d0d0cf;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+}
+
+
+
+
 /* Section 1
 * --------------------------------------- */
 #header-section .full-background {
@@ -515,7 +576,6 @@ img {
 * --------------------------------------- */
 #entreprise-section p{
     padding: 1.8em 0;
-    line-height: 1.4;
 }
 #entreprise-section .card {
     width: 100%;
@@ -596,7 +656,6 @@ img {
     padding: 0px 15%;
     margin-top: 2.5em;
     margin-bottom: 0.5em;
-    line-height: 1.4;
 }
 #produits-aquaculture .full-image{
     position: absolute;
@@ -734,7 +793,6 @@ img {
     padding: 0px 15%;
     margin-top: 2.5em;
     margin-bottom: 0.5em;
-    line-height: 1.4;
 }
 #produits-salaison .full-image{
     position: absolute;
@@ -887,7 +945,43 @@ img {
    position: relative;
 }
 
+#presentation-section p {
+    line-height: 2.5;
+}
 
+#equipe-section .card {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+#equipe-section .card .col-md-8 {
+    margin: auto 0px;
+}
+
+#equipe-section .card img {
+    margin: auto;
+    display: block;
+    width: 190px;
+}
+#equipe-section .card i {
+    font-weight: 100;
+    font-family: 'HelveticaNeue-Light';
+    font-size: 16px;
+}
+#equipe-section .card h6 {
+    margin-bottom: 15px;
+}
+#partenaire-section p {
+   line-height: 2.5;
+}
+#partenaire-section .container {
+    overflow: visible;
+}
 
 /* Top Header Section
 * --------------------------------------- */
@@ -938,8 +1032,8 @@ img {
 * --------------------------------------- */
 #footer {
     background-color: #2e2e2f;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 #footer h6 {
     font-family: 'Novecentosanswide-Bold';
@@ -1176,3 +1270,6 @@ img {
         font-size: 30px;
     }
 }
+
+
+

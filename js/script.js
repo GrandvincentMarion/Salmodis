@@ -1,6 +1,7 @@
 $(document).ready(function() {
+    
     var anchors = [];
-    $('.section').each(function(test) {
+    $('.section').each(function() {
         var anchorSection = $(this).data('name'); 
         var parts = anchorSection.split();
         anchors.push(parts[0]);
@@ -8,14 +9,18 @@ $(document).ready(function() {
 
 	$('#fullpage').fullpage({
         anchors: [],
-        css3:true,
         autoScrolling: true,
         responsiveWidth: 767,
         navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: anchors,
+        navigationTooltips: anchors,
+        scrollingSpeed: 800,
+        scrollOverflow: true,
+        scrollOverflowOptions: {
+            click: false,  
+            wheelStep: 20
+        },
 
- 
         onLeave: function(index, nextIndex, direction){
             
             //sticky header | every page
@@ -58,12 +63,14 @@ $(document).ready(function() {
                         $('#produits-salaison .navbar-middle ul').removeClass('active')
                     }, 200);
                 }
-
             }
-
+        },
+        afterLoad: function(anchorLink, index){
+            movingSlider()
         },
 
     });
+    $.fn.fullpage.reBuild();
 });
 
 //menu responsive 
@@ -161,9 +168,8 @@ function movingSlider() {
     },10);
 
 }
-movingSlider()
-
 
 window.addEventListener('resize', function(){
     movingSlider()
 });
+
