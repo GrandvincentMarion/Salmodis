@@ -1100,7 +1100,7 @@ img {
 }
 
 
-@media screen and (max-width: 1024px) and (orientation: landscape){
+@media screen and (max-width: 1024px) and (min-width: 767px) and (orientation: landscape){
     #produits-aquaculture .navbar-middle ul li,
     #produits-salaison .navbar-middle ul li {
         padding-right: 9%;
@@ -1108,8 +1108,14 @@ img {
     #galerie-photo .galerie-slideshow {
         padding-bottom: 250px;
     }
+    #equipe-section .card h6 {
+        text-align: left;
+    }
 }
 @media screen and (max-width: 1024px) and (min-width: 767px){
+    .navbar ul li {
+        font-size: 12px;
+    }
     #produits-aquaculture h3,
     #produits-salaison h3 {
         font-size: 30px;
@@ -1132,9 +1138,23 @@ img {
     #galerie-photo .galerie-slideshow {
         padding-bottom: 250px;
     }
+    #equipe-section .card {
+        display: block;
+        margin-top: 10%;
+    }
+    #equipe-section .card img {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    #equipe-section .card h6 {
+        margin-bottom: 5px;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    h4 {
+        font-size: 30px;
+    }
     .xs-hidden {
         display: none !important;
     }
@@ -1242,6 +1262,28 @@ img {
     .mention-legale {
         margin-bottom: 30px;
         padding-top: 20px;
+    }
+
+    #presentation-section p {
+        margin-top: 15%;
+        line-height: 1.4;
+    }
+    #equipe-section .card {
+        display: block;
+        margin-top: 15%;
+    }
+    #equipe-section .card img {
+        width: 130px;
+        margin-bottom: 15px;
+    }
+    #equipe-section .card h6 {
+        margin-bottom: 5px;
+    }
+    #partenaire-section p {
+        line-height: 1.4;
+    }
+    #partenaire-section .container {
+        overflow: hidden;
     }
     
 }
