@@ -48,10 +48,12 @@ $(document).ready(function() {
           
         },
         afterLoad: function(anchorLink, index){
-            movingSlider();
+           
         },
 
         afterRender: function(){
+            movingSlider();
+
             if( $('.navbar').hasClass('sticky')) {
                 console.log('here')
                 $('.navbar').removeClass('wow').css('visibility', 'visible');
