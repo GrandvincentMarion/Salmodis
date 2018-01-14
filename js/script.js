@@ -1,19 +1,26 @@
 $(document).ready(function() {
     
+    var names = [];
     var anchors = [];
+    
     $('.section').each(function() {
-        var anchorSection = $(this).data('name'); 
-        var parts = anchorSection.split();
-        anchors.push(parts[0]);
+        var nameSection = $(this).data('name'); 
+        var anchorSection = $(this).data('anchor'); 
+        var anchorParts = anchorSection.split();
+        var nameParts = nameSection.split();
+        names.push(nameParts[0]);
+        anchors.push(anchorParts[0]);
     });
+    
 
 	$('#fullpage').fullpage({
-        anchors: [],
+        anchors: anchors,
+        scrollBar: true,
         autoScrolling: true,
         responsiveWidth: 767,
         navigation: true,
 		navigationPosition: 'right',
-        navigationTooltips: anchors,
+        navigationTooltips: names,
         scrollingSpeed: 800,
         scrollOverflow: true,
         scrollOverflowOptions: {
@@ -22,7 +29,6 @@ $(document).ready(function() {
         },
 
         onLeave: function(index, nextIndex, direction){
-            
             //sticky header | every page
             var header = $('.navbar');
             if(nextIndex > 1) {
@@ -39,35 +45,28 @@ $(document).ready(function() {
             else if ($('.section').eq(nextIndex-1).hasClass('black-dot') === false){
                 $('#fp-nav').removeClass('dark');
             }
-
-            //animation page index
-            if (  $('#fullpage').hasClass('index') === true ) {
-
-                // animation section-2
-                if (nextIndex == 2) {
-                    setInterval(function(){
-                        $('#entreprise-section .card .col-md-3').removeClass('active')
-                    }, 200);
-                }
-
-                // animation section-3
-                if (nextIndex == 3) {
-                    setInterval(function(){
-                        $('#produits-aquaculture .navbar-middle ul').removeClass('active')
-                    }, 200);
-                }
-
-                // animation section-3
-                if (nextIndex == 4) {
-                    setInterval(function(){
-                        $('#produits-salaison .navbar-middle ul').removeClass('active')
-                    }, 200);
-                }
-            }
+          
         },
         afterLoad: function(anchorLink, index){
-            movingSlider()
+            movingSlider();
         },
+
+        afterRender: function(){
+            if( $('.navbar').hasClass('sticky')) {
+                console.log('here')
+                $('.navbar').removeClass('wow').css('visibility', 'visible');
+            }
+            wow = new WOW(
+                {
+                    boxClass:     'wow',      // default
+                    animateClass: 'animated', // default
+                    offset:       0,          // default
+                    mobile:       false,       // default
+                    live:         true        // default
+                }
+            ).init();
+
+        }
 
     });
     $.fn.fullpage.reBuild();

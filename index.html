@@ -8,7 +8,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <link rel='stylesheet' href='css/grid-system.css'>
         <link rel='stylesheet' href="css/javascript.fullPage.css">
+        <link rel='stylesheet' href='css/animate.css'>
         <link rel='stylesheet' href='css/style.css'>
+        
         
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -17,7 +19,7 @@
     </head>
 
     <body>
-        <div class="navbar">        
+        <div class="navbar wow fadeInDown" data-wow-duration="1s">        
             <div class="container">
                 <div class="row">
                     <div class="menu-responsive">
@@ -81,7 +83,7 @@
 
         <div id="fullpage" class="index">
 
-            <div class="section" id="header-section" data-name="Salmodis">
+            <div class="section" id="header-section" data-name="Salmodis" data-anchor="salmodis">
         
                 <div class="full-background">
                     <img class="background" src="img/slider-salmodis-1.jpg" alt="">
@@ -91,13 +93,13 @@
                     
                         <div class="row">
                             <div class="header-title">
-                                <h1>SALMODIS</h1>
-                                <h2>Depuis <span>2018</span></h2>
+                                <h1 class="wow fadeInDown" data-wow-duration="1s">SALMODIS</h1>
+                                <h2 class="wow fadeInDown" data-wow-duration="1.1s">Depuis <span>2018</span></h2>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="header-caption">
+                            <div class="header-caption wow fadeInUp" data-wow-duration="1s">
                                 <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
 
                                     <div class="row">
@@ -132,66 +134,64 @@
             </div>
 
             <!-- section L'ENTREPRISE -->
-            <div class="section black-dot" id="entreprise-section" data-name="Qui sommmes-nous ?">
+            <div class="section black-dot" id="entreprise-section" data-name="Qui sommmes-nous ?" data-anchor="qui-sommes-nous-?">
                 <div class="container">
                     <div class="row">
                         <div class="content">
                             <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-                                <h3 class="xs-hidden">SALMODIS</h3>
-                                <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles, prêtes à repondre à toutes vos questions. Si vous venez la nuit, vous pouvez rencontrer Romain.</p>
+                                <h3 class="xs-hidden wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">SALMODIS</h3>
+                                <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles, prêtes à repondre à toutes vos questions. Si vous venez la nuit, vous pouvez rencontrer Romain.</p>
                             </div>
 
-                            
+   
                             <div class="card">
-                                <div class="col-md-3 col-sm-3 col-xs-12 active">
-                                    <div class="card-unit">
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <div class="card-unit wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.1s">
                                         <img src="img/card-1.png" alt="">
                                         <h4>Pascal</h4>
                                         <p>PDG</p>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-sm-3 col-xs-12 active">
-                                    <div class="card-unit">
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <div class="card-unit wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.1s">
                                         <img src="img/card-2.png" alt="">
                                         <h4>Céline</h4>
                                         <p>Responsable des ventes</p>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-sm-3 col-xs-12 active">
-                                    <div class="card-unit">
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <div class="card-unit wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.1s">
                                         <img src="img/card-3.png" alt="">
                                         <h4>Sophie</h4>
                                         <p>Chargée de comm'</p>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-sm-3 col-xs-12 active">
-                                    <div class="card-unit">
+                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                    <div class="card-unit wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.1s">
                                         <img src="img/card-4.png" alt="">
                                         <h4>Romain</h4>
                                         <p>Préparateur</p>
                                     </div>
-                                </div>
+                                </div>                         
                             </div>
 
-                            <div class="button">
-                                <a href="">En savoir plus</a>
-                            </div>
-                            
+                            <div class="button wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="-150">
+                                <a href="#">En savoir plus</a>
+                            </div>  
+                        
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- section LES PRODUITS D'AQUACULTURE -->
-            <div class="section" id="produits-aquaculture" data-name="Produits d'aquaculture">
+            <div class="section" id="produits-aquaculture" data-name="Produits d'aquaculture" data-anchor="nos-produits-d-aquaculture">
 
                 <div class="navbar-middle xs-hidden"> 
-                    <a href="#">
-                        <div class="navbar-icon">
-                            <object type="image/svg+xml" data="img/waves.svg"></object>
-                        </div>
-                    </a>
-                    <ul class="active">
+                    <div class="navbar-icon wow bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <object type="image/svg+xml" data="img/waves.svg"></object> 
+                    </div>   
+                    <ul class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
                         <li>
                             <a href="#">Truite</a>
                         </li>
@@ -207,7 +207,7 @@
                         <li>
                             <a href="#">Omble</a>
                         </li>
-                    </ul>
+                    </ul>                                        
                 </div>
                 
                 <div class="col-md-6 col-sm-6 col-xs-12">
@@ -216,11 +216,11 @@
                             <img src="img/aquaculture.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h3>LES PRODUITS D'</h3>
-                            <h4>AQUACULTURE</h4>
-                            <p>Salmodis est un acteur historique de l’aquaculture française, particulièrement impliqué dans la production de salmonidés...</p>
+                            <h3 class="wow fadeInLeft" data-wow-duration="1s">LES PRODUITS D'</h3>
+                            <h4 class="wow fadeInLeft" data-wow-duration="1s">AQUACULTURE</h4>
+                            <p class="wow fadeInLeft" data-wow-duration="1s">Salmodis est un acteur historique de l’aquaculture française, particulièrement impliqué dans la production de salmonidés...</p>
 
-                            <div class="button">
+                            <div class="button wow fadeInLeft" data-wow-duration="1.1s">
                                 <a href="">En savoir plus</a>
                             </div>
                         </div>
@@ -231,11 +231,11 @@
                     <div class="row">
                         <div class="full-image">
                             <img src="img/aquaculture.jpg" alt="">
-                        </div>
+                        </div>               
                     </div>
                 </div>  
 
-                <div class="caption-icon xs-hidden">
+                <div class="caption-icon xs-hidden wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                     <a href="#nos-produits-salaison">
                         <img class="next-section" src="img/icon-go-bottom-2.png" alt=""> 
                     </a>
@@ -245,17 +245,13 @@
 
 
             <!-- section LES PRODUITS SALAISON -->
-            <div class="section black-dot" id="produits-salaison" data-name="Produits salaison">
+            <div class="section black-dot" id="produits-salaison" data-name="Produits salaison" data-anchor="nos-produits-salaison">
                     
                 <div class="navbar-middle xs-hidden"> 
-                    <a href="#">
-                        <div class="navbar-icon">
-                            <div class="navbar-icon">
-                                <object type="image/svg+xml" data="img/waves.svg"></object>
-                            </div>
-                        </div>
-                    </a>
-                    <ul class="active">
+                    <div class="navbar-icon wow bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <object type="image/svg+xml" data="img/waves.svg"></object>
+                    </div>
+                    <ul class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
                         <li>
                             <a href="#">Saumon fumé</a>
                         </li>
@@ -279,18 +275,18 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="row">
                         <div class="content">
-                            <h3>LES PRODUITS DE</h3>
-                            <h4>SALAISON</h4>
-                            <p>Salmodis produit dans l’Aisne près de 150 tonnes de saumon & de truite fumés de façon artisanale et offre toute une gamme d’articles...</p>
+                            <h3 class="wow fadeInRight" data-wow-duration="1s">LES PRODUITS DE</h3>
+                            <h4 class="wow fadeInRight" data-wow-duration="1s">SALAISON</h4>
+                            <p class="wow fadeInRight" data-wow-duration="1s">Salmodis produit dans l’Aisne près de 150 tonnes de saumon & de truite fumés de façon artisanale et offre toute une gamme d’articles...</p>
 
-                            <div class="button">
+                            <div class="button wow fadeInRight" data-wow-duration="1.1s">
                                 <a href="">En savoir plus</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="caption-icon xs-hidden">
+                <div class="caption-icon xs-hidden wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                     <a href="#notre-galerie-photo">
                         <img class="next-section" src="img/icon-go-bottom-2.png" alt=""> 
                     </a>
@@ -300,15 +296,14 @@
 
 
             <!-- section GALERIE PHOTO -->
-            <div class="section black-dot" id="galerie-photo" data-name="Galerie photo">
-
+            <div class="section black-dot" id="galerie-photo" data-name="Galerie photo" data-anchor="notre-galerie-photo">
                 <div class="galerie-content">
                     <div class="galerie-txt">
                         <div class="content">
-                            <h3>GALERIE PHOTO</h3>
-                            <p>Nos photos ont été prises à Rungis, ou proviennent de nos partenaires.</p>
+                            <h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">GALERIE PHOTO</h3>
+                            <p class="wow fadeInDown" data-wow-duration="0.9s" data-wow-delay="0.2s">Nos photos ont été prises à Rungis, ou proviennent de nos partenaires.</p>
 
-                            <div class="button">
+                            <div class="button wow fadeInDown" data-wow-duration="1.2s" data-wow-delay="0s">
                                 <a href="">Voir +</a>
                             </div>
                         </div>
@@ -336,70 +331,69 @@
             </div>
 
             <!-- section FOOTER -->
-            <div class="section fp-auto-height fp-section" id="footer" data-name="Contact">
+            <div class="section fp-auto-height fp-section" id="footer" data-name="Contact" data-anchor="contact">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                                <div class="row">
-                                
-                            <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
-                                <h6>Menu</h6>
-                                <ul>
-                                    <li>
-                                        <a href="#">Les produits d'aquaculture</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Les produits du salaison</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Galerie photos</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
+                                    <h6>Menu</h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Les produits d'aquaculture</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Les produits du salaison</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Galerie photos</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                            <div class="col-md-3 col-sm-3">
-                                <h6>Contact</h6>
-                                <p>SALMODIS, SA LE CREN</p>
-                                <p>70C allée de Saint Malo</p>
-                                <p>Marée 80115</p>
-                                <p>94519 Rungis CEDEX</p>
-                                <p class="num">Tel : 01 46 87 50 43</p>
-                                <p>Fax : 01 46 87 83 87</p>
-                                <p class="mail">Email : <a href="mailto:salmodis@gmail.com">salmodis@gmail.com</a></p>
-                            </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <h6>Contact</h6>
+                                    <p>SALMODIS, SA LE CREN</p>
+                                    <p>70C allée de Saint Malo</p>
+                                    <p>Marée 80115</p>
+                                    <p>94519 Rungis CEDEX</p>
+                                    <p class="num">Tel : 01 46 87 50 43</p>
+                                    <p>Fax : 01 46 87 83 87</p>
+                                    <p class="mail">Email : <a href="mailto:salmodis@gmail.com">salmodis@gmail.com</a></p>
+                                </div>
 
-                            <div class="col-md-3 col-sm-3">
-                                <h6>Nos partenaires</h6>
-                                <ul>
-                                    <li>La pisciculture de l’Andelle</li>
-                                    <li>La pisciculture de Ménesqueville</li>
-                                    <li>La saumonerie de l’Ourq</li>
-                                </ul>
-                            </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <h6>Nos partenaires</h6>
+                                    <ul>
+                                        <li>La pisciculture de l’Andelle</li>
+                                        <li>La pisciculture de Ménesqueville</li>
+                                        <li>La saumonerie de l’Ourq</li>
+                                    </ul>
+                                </div>
 
-                            <div class="col-md-1 col-sm-1 xs-hidden">
-                                <ul class="social-share">
-                                    <li>
-                                        <a href="#">
-                                            <img src="img/location.svg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="img/facebook.svg" alt="">
-                                        </a>
-                                    </li> 
-                                    <li>
-                                        <a href="#">
-                                            <img src="img/youtube.svg" alt="">
-                                        </a>
-                                    </li>                                                               
-                                </ul>
+                                <div class="col-md-1 col-sm-1 xs-hidden">
+                                    <ul class="social-share">
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/location.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/facebook.svg" alt="">
+                                            </a>
+                                        </li> 
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/youtube.svg" alt="">
+                                            </a>
+                                        </li>                                                               
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                             <div class="mention-legale">
@@ -415,6 +409,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js'></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
         <script src='js/script.js'></script>
     </body>

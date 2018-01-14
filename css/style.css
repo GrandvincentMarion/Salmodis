@@ -65,6 +65,7 @@ html {
     margin: 0;
     font-family: 'Helvetica';
     font-size: 15px;
+    overflow: hidden!important;
 }
 body {
     width: 100%;
@@ -590,34 +591,6 @@ img {
     display: block;
     overflow: hidden;
 }
-#entreprise-section .card .col-md-3{
-    left: 0;
-    transform: inherit;
-    transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-}
-#entreprise-section .card .active:first-child {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-#entreprise-section .card .active:nth-child(2) {
-    position: relative;
-    left: 17%;
-    transform: translateX(-17%);
-}
-#entreprise-section .card .active:nth-child(3) {
-    position: relative;
-    left: -17%;
-    transform: translateX(17%);
-}
-#entreprise-section .card .active:nth-child(4) {
-    position: relative;
-    left: -50%;
-    transform: translateX(50%);
-}
 #entreprise-section .card img {
     width: 145px;
 }
@@ -691,6 +664,9 @@ img {
     position: relative;
     z-index: 2;
 }
+#produits-aquaculture .navbar-middle {
+
+}
 #produits-aquaculture .navbar-middle .navbar-icon {
     height: 60px;
     width: 60px;
@@ -700,11 +676,7 @@ img {
     right: 0;
     margin: auto;
     z-index: 20;
-    top: 50%;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    top: 46%;
 }
 #produits-aquaculture .navbar-middle .navbar-icon object {
     margin: auto;
@@ -712,52 +684,34 @@ img {
     height: 100%;
     padding: 12px;
 }
-#produits-aquaculture .navbar-middle ul {
+#produits-aquaculture ul {
     width: 50%;
     position: absolute;
-    right: 0;
+    right: 0%;
     z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    top: 48.5%;
     padding-left: 4em;
     padding-right: 4em;
     text-align: center;
-    transition: right 1.1s ease;
-    -ms-transition: right 1.1s ease;
-    -moz-transition: right 1.1s ease;
-    -webkit-transition: right 1.1s ease;
 }
-#produits-aquaculture .navbar-middle ul.active {
-    right: 45%;
-}
-#produits-aquaculture .navbar-middle ul li{
+#produits-aquaculture ul li{
     font-family: 'HelveticaNeue';
     color: #fff;
     text-align: center;
     display: inline-block;
     padding-right: 10%;
     position: relative;
-    transition: padding-right 1.1s ease;
-    -ms-transition: padding-right 1.1s ease;
-    -moz-transition: padding-right 1.1s ease;
-    -webkit-transition: padding-right 1.1s ease;
 }
-#produits-aquaculture .navbar-middle ul.active li {
-    padding-right: 0%;
-}
-#produits-aquaculture .navbar-middle ul li:last-child {
+#produits-aquaculture ul li:last-child {
     padding-right: 0;
 }
-#produits-aquaculture .navbar-middle ul li a {
+#produits-aquaculture ul li a {
     padding-bottom: 5px;
     border-bottom:0px solid #23b2c2;
     position: relative;
 
 }
-#produits-aquaculture .navbar-middle ul li a:after {
+#produits-aquaculture ul li a:after {
     content: "";
     width: 0%;
     height: 2px;
@@ -770,7 +724,7 @@ img {
     -moz-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
 }
-#produits-aquaculture .navbar-middle ul li a:hover:after {
+#produits-aquaculture ul li a:hover:after {
     content:"";
     width: 100%;
 }
@@ -835,11 +789,7 @@ img {
     right: 0;
     margin: auto;
     z-index: 20;
-    top: 50%;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    top: 46%;
 }
 #produits-salaison .navbar-middle .navbar-icon object {
     margin: auto;
@@ -847,28 +797,17 @@ img {
     height: 100%;
     padding: 12px;
 }
-#produits-salaison .navbar-middle ul {
+#produits-salaison ul {
     width: 50%;
     position: absolute;
     left: 0;
     z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    top: 48.5%;
     padding-left: 4em;
     padding-right: 4em;
     text-align: center;
-    transition: left 1.1s ease;
-    -ms-transition: left 1.1s ease;
-    -moz-transition: left 1.1s ease;
-    -webkit-transition: left 1.1s ease;
 }
-#produits-salaison .navbar-middle ul.active {
-    left: 45%;
-}
-#produits-salaison .navbar-middle ul li{
+#produits-salaison ul li{
     font-family: 'HelveticaNeue';
     color: #fff;
     text-align: center;
@@ -880,19 +819,15 @@ img {
     -moz-transition: padding-right 1.1s ease;
     -webkit-transition: padding-right 1.1s ease;
 }
-#produits-salaison .navbar-middle ul.active li {
-    padding-right: 0%;
-}
-#produits-salaison .navbar-middle ul li:last-child {
+#produits-salaison ul li:last-child {
     padding-right: 0;
 }
-#produits-salaison .navbar-middle ul li a {
+#produits-salaison ul li a {
     padding-bottom: 5px;
     border-bottom:0px solid #fdac57;
     position: relative;
-
 }
-#produits-salaison .navbar-middle ul li a:after {
+#produits-salaison ul li a:after {
     content: "";
     width: 0%;
     height: 2px;
@@ -905,7 +840,7 @@ img {
     -moz-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
 }
-#produits-salaison .navbar-middle ul li a:hover:after {
+#produits-salaison ul li a:hover:after {
     content:"";
     width: 100%;
 }
@@ -1112,6 +1047,7 @@ img {
         text-align: left;
     }
 }
+
 @media screen and (max-width: 1024px) and (min-width: 767px){
     .navbar ul li {
         font-size: 12px;
@@ -1124,15 +1060,23 @@ img {
     #produits-salaison h4 {
         font-size: 47px;
     }
-    #produits-aquaculture .navbar-middle ul li,
-    #produits-salaison .navbar-middle ul li {
+    #produits-aquaculture ul,
+    #produits-salaison ul {
+        top:50%;
+        transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+        -moz-transform:translateY(-50%);
+        -webkit-transform:translateY(-50%);
+    }
+    #produits-aquaculture ul li,
+    #produits-salaison ul li {
         display: block;
         text-align: center;
         padding-right: 0%;
         margin-bottom: 1.5em;
     }
-    #produits-aquaculture .navbar-middle ul li:last-child,
-    #produits-salaison .navbar-middle ul li:last-child {
+    #produits-aquaculture ul li:last-child,
+    #produits-salaison ul li:last-child {
         margin-bottom: 0em;
     }
     #galerie-photo .galerie-slideshow {
@@ -1152,6 +1096,9 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+    html {
+        overflow: auto !important;
+    }
     h4 {
         font-size: 30px;
     }
