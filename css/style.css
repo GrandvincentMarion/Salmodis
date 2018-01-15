@@ -847,6 +847,66 @@ img {
 
 /* Section 4
 * --------------------------------------- */
+#commentaires {
+
+}
+#commentaires .commentaires-content p{
+    position: relative;
+    padding: 0px 30px;
+    color: #6e6c6c;
+    line-height: 2;
+}
+#commentaires .commentaires-content p span.quote-open{
+    background-image: url(../img/quote-open.png);
+    width: 26px;
+    height: 19px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+#commentaires .commentaires-content p span.quote-close{
+    background-image: url(../img/quote-close.png);
+    width: 26px;
+    height: 19px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+#commentaires .commentaires-content h6{
+    position: relative;
+    padding: 0px 30px;
+    color: #6e6c6c;
+    line-height: 2;
+    
+}
+#commentaires .commentaires-content .commentaires-name {
+    color:#000;
+    font-size: 16px;
+    margin-top: 30px;
+    font-family: 'HelveticaNeue';
+}
+#commentaires .note {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: auto;
+    display: table;
+}
+#commentaires .note .note-star {
+    background-image: url(../img/icon-star.png);
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin: 0px 5px;
+    margin-top: 20px;
+}
+
+/* Section 5
+* --------------------------------------- */
 #galerie-photo .galerie-content {
     position: relative;
     width: 100%;
@@ -1036,6 +1096,9 @@ img {
 
 
 @media screen and (max-width: 1024px) and (min-width: 767px) and (orientation: landscape){
+    html {
+        overflow: auto !important;
+    }
     #produits-aquaculture .navbar-middle ul li,
     #produits-salaison .navbar-middle ul li {
         padding-right: 9%;
@@ -1049,6 +1112,9 @@ img {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 767px){
+    html {
+        overflow: auto !important;
+    }
     .navbar ul li {
         font-size: 12px;
     }
@@ -1092,6 +1158,15 @@ img {
     }
     #equipe-section .card h6 {
         margin-bottom: 5px;
+    }
+    #commentaires .commentaires-content .commentaires-name {
+        margin-top: 15px;
+    }
+    #commentaires .note {
+        margin-bottom: 12%;
+    }
+    #commentaires .note .note-star {
+        margin-top: 5px;
     }
 }
 
@@ -1232,7 +1307,19 @@ img {
     #partenaire-section .container {
         overflow: hidden;
     }
-    
+    #commentaires {
+        border-top: 1px solid #e0e0df;
+        padding-top: 3em;
+    }
+    #commentaires .commentaires-content .commentaires-name {
+        margin-top: 15px;
+    }
+    #commentaires .note {
+        margin-bottom: 20%;
+    }
+    #commentaires .note .note-star {
+        margin-top: 5px;
+    }
 }
 @media screen and (max-width: 420px) {
     h1 {
