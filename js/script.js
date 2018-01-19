@@ -30,13 +30,13 @@ $(document).ready(function() {
 
         onLeave: function(index, nextIndex, direction){
             //sticky header | every page
-            var header = $('.navbar');
+            /*var header = $('.navbar');
             if(nextIndex > 1) {
                 header.addClass('sticky');
             }
             else if (nextIndex == 1) {
                 header.removeClass('sticky');
-            }
+            }*/
 
             // color of navigation
             if ( $('.section').eq(nextIndex-1).hasClass('black-dot') === true) {
