@@ -10,7 +10,7 @@
 svg {
 cursor:pointer;
 }
-svg:hover path {
+svg path {
 	animation: moveTheWave 1.7s linear infinite;  
 	animation-fill-mode: both;
 }
