@@ -113,7 +113,7 @@ p {
     padding: 0;
     color: #000000;
     font-size: 15px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     line-height: 1.4;
 }
 ul,li {
@@ -166,7 +166,6 @@ img {
 .button a {
     padding: 10px 30px;
     display: block;
-    letter-spacing: 0.5px;
     position: relative;
     z-index: 1;
 }
@@ -271,7 +270,6 @@ img {
     vertical-align: middle;
     font-family: 'HelveticaNeue';
     font-size: 14px;
-    letter-spacing: 0.5px;
     text-align: center;
 }
 .navbar ul li.active a {
@@ -317,7 +315,12 @@ img {
 }
 
 #fp-nav.right {
-    right: 1.5%;
+    right: 0;
+    margin-top: 0 !important;
+    background-color: #252525;
+    width: 55px;
+    height: 100%;
+    top: 0;
 }
 #fp-nav.dark ul li a span, 
 #fp-nav.dark.fp-slidesNav ul li a span,
@@ -343,7 +346,6 @@ img {
     right: 25px;
     font-family: 'HelveticaNeue-Light';
     color: #fff;
-    letter-spacing: 1px;
     line-height: 1.3;
     font-size: 14px;
 }
@@ -541,7 +543,6 @@ img {
 #header-section .header-caption .caption-txt p {
     font-family: 'HelveticaNeue-Light';
     color: #fff;
-    letter-spacing: 1.8px;
     line-height: 1.7;
     font-size: 14px;
 }
@@ -598,7 +599,6 @@ img {
     font-family: 'HelveticaNeue';
     font-size: 16px;
     color: #000;
-    letter-spacing: 1px;
     margin-top: 10px;
 }
 #entreprise-section .card p {
@@ -608,7 +608,6 @@ img {
     margin: 0;
     font-size: 14px;
     margin-top: 2px;
-    letter-spacing: 0;
 }
 
 /* Section 3
@@ -663,9 +662,6 @@ img {
     height: 100%;
     position: relative;
     z-index: 2;
-}
-#produits-aquaculture .navbar-middle {
-
 }
 #produits-aquaculture .navbar-middle .navbar-icon {
     height: 60px;
@@ -847,9 +843,6 @@ img {
 
 /* Section 4
 * --------------------------------------- */
-#commentaires {
-
-}
 #commentaires .commentaires-content p{
     position: relative;
     padding: 0px 30px;
@@ -1035,12 +1028,10 @@ img {
     color: #666666;
     font-size: 25px;
     text-transform: uppercase;
-    letter-spacing: 2px;
     margin-bottom: 20px;
 }
 #footer ul li{
     font-family: 'HelveticaNeue-Light';
-    letter-spacing: 1px;
     font-size: 14px;
     color: #f5f5f5;
     padding-bottom: 18px;
@@ -1062,7 +1053,6 @@ img {
 }
 #footer p {
     font-family: 'HelveticaNeue-Light';
-    letter-spacing: 1px;
     font-size: 14px;
     color: #f5f5f5;
     padding-bottom: 6px;
@@ -1324,11 +1314,9 @@ img {
 @media screen and (max-width: 420px) {
     h1 {
         font-size: 40px;
-        letter-spacing: 2px;
     }
     h2 {
         font-size: 25px;
-        letter-spacing: 1px;
         line-height: 0.5;
     }
     #header-section .header-caption {
