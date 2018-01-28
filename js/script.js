@@ -5,10 +5,11 @@ $(document).ready(function() {
 
     $('.section.withAnchor').each(function() {
         var nameSection = $(this).data('name'); 
-        var anchorSection = $(this).data('anchor'); 
-        var anchorParts = anchorSection.split();
         var nameParts = nameSection.split();
         names.push(nameParts[0]);
+
+        var anchorSection = $(this).data('anchor'); 
+        var anchorParts = anchorSection.split();
         anchors.push(anchorParts[0]);
     });
 
@@ -20,7 +21,7 @@ $(document).ready(function() {
         navigation: true,
 		navigationPosition: 'right',
         navigationTooltips: names,
-        scrollingSpeed: 800,
+        scrollingSpeed: 1000,
         scrollOverflow: true,
         scrollOverflowOptions: {
             click: false,  
@@ -40,39 +41,21 @@ $(document).ready(function() {
             } else {
                 $('.fp-nav__arrow.arrow-top').removeClass('inactive')
             }                   
-               
-            //sticky header | every page
-            /*var header = $('.navbar');
-            if(nextIndex > 1) {
-                header.addClass('sticky');
-            }
-            else if (nextIndex == 1) {
-                header.removeClass('sticky');
-            }*/
 
-
-            // color of navigation
-            /*if ( $('.section').eq(nextIndex-1).hasClass('black-dot') === true) {
-                $('#fp-nav').addClass('dark');
-            } 
-            else if ($('.section').eq(nextIndex-1).hasClass('black-dot') === false){
-                $('#fp-nav').removeClass('dark');
-            }*/
-          
+            // animation tooltip
+            var indexEq = nextIndex-1;
+            $("#fp-nav .fp-nav__dot ul li:eq("+indexEq+")").addClass('anim');
+            setTimeout(function(){
+                $("#fp-nav .fp-nav__dot ul li:eq("+indexEq+")").removeClass('anim');
+            }, 1500);
+                    
         },
         afterLoad: function(anchorLink, index){
 
         },
-
         afterRender: function(){
             movingSlider();
-            wowAnime()
-
-            /*if( $('.navbar').hasClass('sticky')) {
-                $('.navbar').removeClass('wow').css('visibility', 'visible');
-            }*/
-
-
+            wowAnime();
         },
         afterResize: function(){
             movingSlider();
@@ -80,9 +63,9 @@ $(document).ready(function() {
 
 
     });
-    //$.fn.fullpage.reBuild();
 
-    function buildBarreLateral() {
+
+    function MenuLateral() {
         $('#fp-nav').prepend('<div class="fp-nav__social"></div>');
         $('.fp-nav__social').append('<img src="./img/phone.svg"> ');
         $('.fp-nav__social').append('<img src="./img/mail.svg"> ');
@@ -104,9 +87,15 @@ $(document).ready(function() {
                 window.location.hash = "#"+nextSection+"";
             } 
         });
+
+        $('#fp-nav ul li a').each(function() {
+            if ( $(this).attr('href') === "#undefined" ) {
+                $(this).parent('li').remove();
+            }
+        });
     
     }
-    buildBarreLateral();
+    MenuLateral();
     
 });
 
@@ -116,7 +105,7 @@ function wowAnime() {
         {
             boxClass:     'wow',      // default
             animateClass: 'animated', // default
-            offset:       0,          // default
+            offset:       -150,          // default
             mobile:       false,       // default
             live:         true        // default
         }
