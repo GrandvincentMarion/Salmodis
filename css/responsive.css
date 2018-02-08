@@ -1,0 +1,229 @@
+@media screen and (max-width: 1024px) and (min-width: 767px) and (orientation: landscape){
+    html {
+        overflow: auto !important;
+    }
+    #homepage_produits-section .navbar-middle ul li {
+        padding-right: 9%;
+    }
+    #homepage_galerie-photo-section .galerie-slideshow {
+        padding-bottom: 250px;
+    }
+    #equipe-section .card h6 {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 767px){
+    html {
+        overflow: auto !important;
+    }
+    #homepage_produits-section h3{
+        font-size: 30px;
+    }
+    #homepage_produits-section h4 {
+        font-size: 47px;
+    }
+    #homepage_produits-section ul{
+        top:50%;
+        transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+        -moz-transform:translateY(-50%);
+        -webkit-transform:translateY(-50%);
+    }
+    #homepage_produits-section ul li{
+        display: block;
+        text-align: center;
+        padding-right: 0%;
+        margin-bottom: 1.5em;
+    }
+    #homepage_produits-section ul li:last-child {
+        margin-bottom: 0em;
+    }
+    #homepage_galerie-photo-section .galerie-slideshow {
+        padding-bottom: 250px;
+    }
+    #equipe-section .card {
+        display: block;
+        margin-top: 10%;
+    }
+    #equipe-section .card img {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    #equipe-section .card h6 {
+        margin-bottom: 5px;
+    }
+    #homepage_commentaires-section .commentaires-content .commentaires-name {
+        margin-top: 15px;
+    }
+    #homepage_commentaires-section .note {
+        margin-bottom: 12%;
+    }
+    #homepage_commentaires-section .note .note-star {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        overflow: auto !important;
+    }
+    h4 {
+        font-size: 30px;
+    }
+    .xs-hidden {
+        display: none !important;
+    }
+    .only-mobile {
+        display: block;
+    }
+    h1 {
+        font-size: 65px;
+    }
+    .navbar ul {
+        width: 60%;
+        float: right;
+    }
+    .navbar ul li a img{
+        border: 1px solid #fff;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .navbar .navbar-icon object{
+        display: none;
+    }
+    .navbar .navbar-icon img{
+        display: block;
+        padding: 5px;
+        height: 100%;
+    }
+    .menu-responsive {
+        display: block;
+    }
+    #homepage_header-section .header-caption {
+        height: 7em;
+    }
+    .content {
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    #homepage_entreprise-section {
+        margin-bottom: 5em;
+        margin-top: 3em;
+    }
+    #homepage_entreprise-section .card .card-unit {
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
+    }
+    #homepage_produits-section h4 {
+        font-size: 50px;
+    }
+    #homepage_produits-section .full-image {
+        position: relative;
+        top: inherit;
+        bottom: inherit;
+        left: 0;
+        transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        height: auto;
+    }
+    #homepage_produits-section .full-image img{
+        width: 100%;
+        height: auto;
+        object-fit: inherit;
+    }
+    #homepage_produits-section .content {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    #homepage_produits-section,
+    #homepage_produits-section .fp-tableCell,
+    #homepage_galerie-photo-section,
+    #homepage_galerie-photo-section .fp-tableCell{
+        height: auto !important;
+    }
+    #homepage_galerie-photo-section {
+        border-top:1px solid #e0e0df;
+        padding-top:3em;
+    }
+    #homepage_galerie-photo-section .galerie-txt {
+        margin-bottom: 15em;
+    }
+    #homepage_galerie-photo-section .galerie-content {
+        position: relative;
+        height: auto;
+    }
+    #homepage_galerie-photo-section .galerie-txt h3 {
+        font-size: 45px;
+    }
+    #footer h6 {
+        margin-top: 1.5em;
+        margin-bottom: 10px;
+    }
+    #footer ul li {
+        padding-bottom: 5px;
+    }
+    .mention-legale {
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+
+    #presentation-section p {
+        margin-top: 15%;
+        line-height: 1.4;
+    }
+    #equipe-section .card {
+        display: block;
+        margin-top: 15%;
+    }
+    #equipe-section .card img {
+        width: 130px;
+        margin-bottom: 15px;
+    }
+    #equipe-section .card h6 {
+        margin-bottom: 5px;
+    }
+    #partenaire-section p {
+        line-height: 1.4;
+    }
+    #homepage_commentaires-section {
+        border-top: 1px solid #e0e0df;
+        padding-top: 3em;
+    }
+    #homepage_commentaires-section .commentaires-content .commentaires-name {
+        margin-top: 15px;
+    }
+    #homepage_commentaires-section .note {
+        margin-bottom: 20%;
+    }
+    #homepage_commentaires-section .note .note-star {
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 0.5;
+    }
+    #homepage_header-section .header-caption {
+        height: 10em;
+    }
+    #homepage_produits-section h4 {
+        font-size: 32px;
+    }
+    #homepage_produits-section h3 {
+        font-size: 20px;
+    }
+    #homepage_galerie-photo-section .galerie-txt h3 {
+        font-size: 30px;
+    }
+}
