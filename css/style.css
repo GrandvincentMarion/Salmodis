@@ -503,6 +503,32 @@ img {
     display: block;
     cursor: pointer;
 }
+#fp-nav .fp-nav__social ul li.wave-icon {
+    display: table;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    width: 25px;
+    height: 100%;
+    margin-bottom: 15px;
+}
+#fp-nav .fp-nav__social ul li.wave-icon a {
+    width: 25px;
+    height: 25px;
+    display: table-cell;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+}
+#fp-nav .fp-nav__social ul li.wave-icon a img {
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+}
 #fp-nav .fp-nav__social li:hover .fp-tooltip {
     right: 5px;
 }
