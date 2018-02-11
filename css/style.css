@@ -42,7 +42,7 @@ html {
     margin: 0;
     font-family: 'HelveticaNeue-Light';
     color: #000000;
-    font-size: 2.45vh;
+    font-size: 62.5%;
     overflow: hidden!important;
     padding-right: 8.4vh !important;
 }
@@ -51,7 +51,7 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-size: 2.45vh;
+    font-size: 1.45rem
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -59,41 +59,41 @@ h1,h2,h3,h4,h5,h6{
 }
 h1 {
     font-family: 'Novecentosanswide-Bold';
-    font-size: 11vh;
+    font-size: 6.5rem;
     color: #fff;
     letter-spacing:0.7vh;
 }
 h1.big {
-    font-size: 21vh;
+    font-size: 12.4rem;
 }
 h2 {
     font-family: 'Novecentosanswide-Bold';
-    font-size: 9vh;
+    font-size: 5.3rem;
     color: #fff;
     letter-spacing: 0.3vh;
 }
 h3{
     text-align: center;
     color: #000000;
-    font-size: 7.12vh;
+    font-size: 4.2rem;
     font-family: 'Novecentosanswide-Bold';
     letter-spacing: 0.3vh;
 }
 h4 {
-    font-size: 5.5vh;
+    font-size: 3.25rem;
     color: #000000;
     font-family: 'Novecentosanswide-Bold';
     text-align: center;
     letter-spacing: 0.25vh;
 }
 h5 {
-    font-size: 4vh;
+    font-size: 2.35rem;
     font-family: 'Novecentosanswide-Bold';
     color: #000000;
     letter-spacing: 0.25vh;
 }
 h6 {
-    font-size: 2.8vh;
+    font-size: 1.65rem;
     font-family: 'Novecentosanswide-Bold';
     color: #000000;
     letter-spacing: 0.25vh;
@@ -103,18 +103,18 @@ p {
     margin: 0;
     padding: 0;
     color: #000000;
-    font-size: 2.45vh;
+    font-size: 1.45rem;
     letter-spacing: 0.25vh;
     line-height: 5vh;
 }
 p.small {
-    font-size: 2.2vh;
+    font-size: 1.3rem;
 }
 p.little-small {
-    font-size: 2vh;
+    font-size: 1.2rem;
 }
 p.extra-small {
-    font-size: 1.8vh;
+    font-size: 1.05rem;
 }
 .font-parisienne {
     text-align: center;
