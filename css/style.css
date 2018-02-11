@@ -8,15 +8,6 @@
     url('../fonts/HelveticaNeueLT-Roman.svg') format('svg');
 }
 @font-face {
-    font-family: 'HelveticaNeue-Bold';
-    src: url("../fonts/HelveticaNeueLT-Bold.eot");
-    src: url("../fonts/HelveticaNeueLT-Bold.eot?#iefix") format("embedded-opentype"), 
-    url("../fonts/HelveticaNeueLT-Bold.woff") format("woff"), 
-    url("../fonts/HelveticaNeueLT-Bold.woff2") format("woff2"), 
-    url("../fonts/HelveticaNeueLT-Bold.ttf") format("truetype"),
-    url('../fonts/HelveticaNeueLT-Bold.svg') format('svg');
-}
-@font-face {
     font-family: 'HelveticaNeue-Light';
     src: url("../fonts/HelveticaNeueLT-Light.eot");
     src: url("../fonts/HelveticaNeueLT-Light.eot?#iefix") format("embedded-opentype"), 
@@ -34,30 +25,6 @@
     url('../fonts/Novecentosanswide-Bold.svg') format('svg');
 }
 @font-face {
-    font-family: 'Novecentosanswide-Book';
-    src: url("../fonts/Novecentosanswide-Book.eot");
-    src: url("../fonts/Novecentosanswide-Book.eot?#iefix") format("embedded-opentype"), 
-    url("../fonts/Novecentosanswide-Book.ttf") format("truetype"),
-    url('../fonts/Novecentosanswide-Book.otf') format('truetype'),
-    url('../fonts/Novecentosanswide-Book.svg') format('svg');
-}
-@font-face {
-    font-family: 'Novecentosanswide-DemiBold';
-    src: url("../fonts/Novecentosanswide-DemiBold.eot");
-    src: url("../fonts/Novecentosanswide-DemiBold.eot?#iefix") format("embedded-opentype"), 
-    url("../fonts/Novecentosanswide-DemiBold.ttf") format("truetype"),
-    url('../fonts/Novecentosanswide-DemiBold.otf') format('truetype'),
-    url('../fonts/Novecentosanswide-DemiBold.svg') format('svg');
-}
-@font-face {
-    font-family: 'Novecentosanswide-Medium';
-    src: url("../fonts/Novecentosanswide-Medium.eot");
-    src: url("../fonts/Novecentosanswide-Medium.eot?#iefix") format("embedded-opentype"), 
-    url("../fonts/Novecentosanswide-Medium.ttf") format("truetype"),
-    url('../fonts/Novecentosanswide-Medium.otf') format('truetype'),
-    url('../fonts/Novecentosanswide-Medium.svg') format('svg');
-}
-@font-face {
     font-family: 'Parisienne-Regular';
     font-weight:100;
     src: url("../fonts/Parisienne-Regular.eot");
@@ -73,17 +40,18 @@
 html {
     padding: 0;
     margin: 0;
-    font-family: 'Helvetica';
+    font-family: 'HelveticaNeue-Light';
+    color: #000000;
     font-size: 2.45vh;
     overflow: hidden!important;
     padding-right: 8.4vh !important;
 }
 body {
-    font-size: 2.45vh;
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
+    font-size: 2.45vh;
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -91,27 +59,29 @@ h1,h2,h3,h4,h5,h6{
 }
 h1 {
     font-family: 'Novecentosanswide-Bold';
-    font-size: 21vh;
+    font-size: 11vh;
     color: #fff;
     letter-spacing:0.7vh;
 }
+h1.big {
+    font-size: 21vh;
+}
 h2 {
-    font-family: 'Novecentosanswide-Medium';
-    font-size: 5.76vh;
+    font-family: 'Novecentosanswide-Bold';
+    font-size: 9vh;
     color: #fff;
     letter-spacing: 0.3vh;
 }
 h3{
     text-align: center;
-    color: #333333;
-    font-size: 10.16vh;
+    color: #000000;
+    font-size: 7.12vh;
     font-family: 'Novecentosanswide-Bold';
     letter-spacing: 0.3vh;
 }
 h4 {
-    font-size: 7.12vh;
-    color: #333333;
-    text-transform: uppercase;
+    font-size: 5.5vh;
+    color: #000000;
     font-family: 'Novecentosanswide-Bold';
     text-align: center;
     letter-spacing: 0.25vh;
@@ -119,13 +89,13 @@ h4 {
 h5 {
     font-size: 4vh;
     font-family: 'Novecentosanswide-Bold';
-    color: #333333;
+    color: #000000;
     letter-spacing: 0.25vh;
 }
 h6 {
-    font-size: 2.88vh;
+    font-size: 2.8vh;
     font-family: 'Novecentosanswide-Bold';
-    color: #333333;
+    color: #000000;
     letter-spacing: 0.25vh;
 }
 p {
@@ -137,13 +107,33 @@ p {
     letter-spacing: 0.25vh;
     line-height: 5vh;
 }
+p.small {
+    font-size: 2.2vh;
+}
+p.little-small {
+    font-size: 2vh;
+}
+p.extra-small {
+    font-size: 1.8vh;
+}
+.font-parisienne {
+    text-align: center;
+    color: #000000;
+    font-family: 'Parisienne-Regular';
+    font-weight: 100;
+    letter-spacing: -0.01vh;
+    line-height: 1;
+}
 ul,li {
     list-style: none;
     padding: 0;
     margin: 0;
     letter-spacing: 0.25vh;
 }
-a, a:hover{
+a, 
+a:hover,
+a:focus,
+a:visited{
     text-decoration:inherit;
     color: inherit;
     letter-spacing: 0.25vh;
@@ -167,8 +157,7 @@ img {
 .button {
     display: inline-block;
     font-family: 'HelveticaNeue-Light';
-    border: 0.17vh solid #000;
-    font-size: 2.7vh;
+    border: 0.17vh solid #000000;
     margin-top: 3.5em;
     background-color: #fff;
     transition: all 0.4s ease;
@@ -179,7 +168,7 @@ img {
 }
 .button:before {
     content: "";
-    background-color: #000;
+    background-color: #000000;
     width: 0%;
     position: absolute;
     left: 0;
@@ -334,7 +323,6 @@ img {
     font-family: 'HelveticaNeue';
     text-align: center;
     width: auto;
-    font-size: 2.4vh;
 }
 .navbar ul li.active a {
     border-bottom: 0.17vh solid #fff;
@@ -374,7 +362,7 @@ img {
     display: inline-block;
     height: auto;
     text-align: left;
-    margin-bottom: 4.2vh;
+    margin-bottom: 4vh;
 }
 #fp-nav.right {
     right: 0;
@@ -401,13 +389,13 @@ img {
 }
 #fp-nav ul li .fp-tooltip {
     font-family: 'HelveticaNeue';
+    font-size: inherit;
     opacity: 1;
     width: 100%;
-    color: #000;
+    color: #000000;
     background-color: #fff;
     padding: 1.2vh 8.5vh 1.2vh 1.7vh;
     line-height: 1.3;
-    font-size: 2.2vh;
     position: relative;
     height: 100%;
     display: table;
@@ -423,7 +411,7 @@ img {
     content:"";
     height: 1.6vh;
     width: 1.6vh;
-    background-color: #252525;
+    background-color: #000000;
     position: absolute;
     right: 2.7vh;
     border-radius: 50%;
@@ -448,7 +436,7 @@ img {
 #fp-nav ul li, 
 .fp-slidesNav ul li {
     width: 100%;
-    height: 4.2vh;
+    height: 4vh;
     padding: 0px 0px;
     margin: 0 auto;
     display: inline-block;
@@ -498,6 +486,11 @@ img {
 #fp-nav .fp-nav__social ul li .fp-tooltip {
     margin-top: -0.015vh;
 }
+#fp-nav .fp-nav__social ul li .fp-tooltip p {
+    font-size: 2vh;
+    font-family: inherit;
+    line-height: 1.3;
+}
 #fp-nav .fp-nav__social ul li .fp-tooltip.right:before {
     height: 2.7vh;
     width: 2.7vh;
@@ -518,9 +511,6 @@ img {
 #fp-nav .fp-nav__social ul li .fp-tooltip.right.mail:before {
     background: url(../img/mail-hover.svg);
     background-repeat: no-repeat;
-}
-#fp-nav .fp-nav__social ul li .fp-tooltip.right.placement {
-    font-size: 2vh;
 }
 #fp-nav .fp-nav__social ul li .fp-tooltip.right.placement:before {
     background: url(../img/placement-hover.svg);
@@ -561,6 +551,15 @@ img {
 .title-center.title-margin-light {
     margin-top: 5%;
 }
+.title-center h3 {
+    display: table;
+    text-align: center;
+    margin: auto;
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+    padding: 0vh 5.9vh;
+}
 .title-center h4 {
     z-index: 1;
     position: absolute;
@@ -571,17 +570,6 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0vh 5.9vh;
-    font-size: 5.6vh;
-}
-.title-center h4 span {
-    text-align: center;
-    color: #2d2d2d;
-    font-size: 7.5vh;
-    font-family: 'Parisienne-Regular';
-    font-weight: 100;
-    letter-spacing: -0.01vh;
-    line-height: 1;
-    text-transform: initial;
 }
 .title-center:before {
     content:"";
@@ -601,6 +589,7 @@ img {
     left: auto;
     transform: inherit;
     padding: 0vh 5.9vh;
+    text-transform: uppercase;
 }
 .title-center.in-section:before{
     content: "";
@@ -647,19 +636,16 @@ img {
 }
 .header-img-page .header-title {
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 0;
     right: 0;
-    transform: translateY(-55%);
-    -ms-transform: translateY(-55%);
-    -moz-transform: translateY(-55%);
-    -webkit-transform: translateY(-55%);
+    transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    -moz-transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
     z-index: 4;
     margin: auto;
     text-align: center;
-}
-.header-img-page .header-title h1 {
-    font-size: 13vh
 }
 .content-header-img-page {
     position: absolute;
@@ -729,27 +715,16 @@ img {
 #homepage_header-section .header-title h1 {
     line-height: 1;
 }
-#homepage_header-section .header-title h3 {
-    font-family: 'Parisienne-Regular';
-    font-size: 7.45vh;
-    color: #fff;
-    font-weight: 100;
-    line-height: 2;
-    letter-spacing: -0.01vh;
-}
-#homepage_header-section .header-title h2 {
-    font-family: 'Parisienne-Regular';
-    font-size: 7.45vh;
-    color: #fff;
-    font-weight: 100;
+#homepage_header-section .header-title h3:first-child{
     line-height: 1.2;
-    letter-spacing: -0.01vh;
 }
-#homepage_header-section .header-title h2 span {
+#homepage_header-section .header-title h3 {
+    color: #fff;
+    line-height: 2;
+}
+#homepage_header-section .header-title h3 span {
     font-family: 'HelveticaNeue-Light';
-    font-weight: 300;
     line-height: 1;
-    font-size: 6.8vh;
 }
 #homepage_header-section .header-caption {
     position: absolute;
@@ -826,37 +801,19 @@ img {
 #homepage_entreprise-section .card img {
     width: 24.5vh;
 }
-#homepage_entreprise-section .card h4 {
-    font-family: 'HelveticaNeue';
-    font-size: 2.7vh;
-    color: #000;
+#homepage_entreprise-section .card h6 {
     margin-top: 1.7vh;
+    font-family: 'HelveticaNeue';
 }
 #homepage_entreprise-section .card p {
-    font-family: 'HelveticaNeue-Light';
     font-style: italic;
     padding: 0;
     margin: 0;
-    font-size: 2.3vh;
     margin-top: 0.3vh;
 }
 
 /* 
 * --------------------------------------- */
-#homepage_produits-section h3{
-    text-align: center;
-    color: #2d2d2d;
-    font-size: 10vh;
-    font-family: 'Parisienne-Regular';
-    font-weight: 100;
-    letter-spacing: -0.01vh;
-    line-height: 1;
-}
-#homepage_produits-section h4{
-    font-family: 'Novecentosanswide-Bold';
-    font-size: 10.2vh;
-    line-height: 1;
-}
 #homepage_produits-section p{
     text-align: center;
     padding: 0% 15%;
@@ -986,13 +943,11 @@ img {
 #homepage_commentaires-section .commentaires-content h6{
     position: relative;
     padding: 0% 5vh;
-    color: #6e6c6c;
     line-height: 2;
-    
+    font-style: italic;
 }
 #homepage_commentaires-section .commentaires-content .commentaires-name {
-    color:#000;
-    font-size: 2.7vh;
+    color:#000000;
     margin-top: 5vh;
     font-family: 'HelveticaNeue';
 }
@@ -1031,8 +986,9 @@ img {
     position: relative;
     display: block;
 }
-#homepage_galerie-photo-section .galerie-txt h3{
+#homepage_galerie-photo-section .galerie-txt h2{
     margin-bottom:0.3em;
+    color: #000000;
 }
 #homepage_galerie-photo-section .galerie-slideshow {
     height: 30.5vh;
@@ -1072,7 +1028,7 @@ img {
     margin-right: 2vh;
     margin-left: 2vh;
 }
-#produits_header-section .ancre-to-fiche-produit a:hover h3 {
+#produits_header-section .ancre-to-fiche-produit a:hover h4 {
     transform: scale(1.08)
 }
 #produits_header-section .ancre-to-fiche-produit img {
@@ -1088,9 +1044,7 @@ img {
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-#produits_header-section .ancre-to-fiche-produit__titre h3 {
-    font-family: 'Novecentosanswide-Bold';
-    font-size: 5vh;
+#produits_header-section .ancre-to-fiche-produit__titre h4 {
     text-align: center;
     color: #fff;
     line-height: 1;
@@ -1099,11 +1053,8 @@ img {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
 }
-#produits_header-section .ancre-to-fiche-produit__titre h3 span {
-    font-family: 'Parisienne-Regular';
-    font-weight: 100;
-    letter-spacing: -0.01vh;
-    font-size: 5.5vh;
+#produits_header-section .ancre-to-fiche-produit__titre h4 span {
+    color: #fff;
 }
 #produits_fiches-produits-section .produits_fiches-produits__block {
     padding: 0% 5vh;
@@ -1124,11 +1075,10 @@ img {
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-#produits_fiches-produits-section h5 {
+#produits_fiches-produits-section h6 {
     text-align: left;
     text-transform: uppercase;
     padding: 2.5vh 0 1.8vh 0;
-    font-size: 3vh;
 }
 #produits_fiches-produits-section p {
     text-align: left;
@@ -1158,7 +1108,6 @@ img {
     top: 4vh;
     font-family: 'HelveticaNeue-Light';
     color: #8f8c8c;
-    font-size: 2.4vh;
     padding: 0% 2vh;
     letter-spacing: 0.15vh;
     transition: all 0.3s;
@@ -1168,9 +1117,9 @@ img {
 }
 #contact_formulaire-section form .champs label.active {
     top: 1.9vh;
-    font-size: 1.8vh;
     letter-spacing: 0vh;
     opacity: 0.7;
+    font-size: 0.75em;
 }
 #contact_formulaire-section form .champs input {
     height: 8vh;
@@ -1178,7 +1127,6 @@ img {
     width: 100%;
     padding: 2vh 1.5vh 1.1vh 1.5vh;
     font-family: 'HelveticaNeue-Light';
-    font-size: 2.45vh;
     letter-spacing: 0.15vh;
 }
 #contact_formulaire-section form .champs input[type=submit] {
@@ -1190,7 +1138,6 @@ img {
     cursor: pointer;
     font-family: 'HelveticaNeue';
     color: #8f8c8c;
-    font-size: 2.2vh;
 }
 #contact_formulaire-section form .champs input:focus,
 #contact_formulaire-section form .champs textarea:focus {
@@ -1201,7 +1148,6 @@ img {
     text-align: left;
     float: left;
     color: #8f8c8c;
-    font-size: 2.15vh;
     line-height: 1.1;
     letter-spacing: 0.15vh;
     font-style: italic;
@@ -1212,7 +1158,6 @@ img {
     width: 100%;
     padding: 3vh 1.5vh;
     font-family: 'HelveticaNeue-Light';
-    font-size: 2.45vh;
     letter-spacing: 0.15vh;
 }
 
@@ -1228,9 +1173,7 @@ img {
     width: 100%;
     height: 100%;
 }
-#contact_notre-equipe-section {
 
-}
 #contact_notre-equipe-section .card{
     display: block;
     height: 100%;
@@ -1246,13 +1189,10 @@ img {
 #contact_notre-equipe-section .card h6 {
     text-align: left;
     font-family: 'HelveticaNeue';
-    font-size: 2.8vh;
-    margin-bottom: 2vh;
 }
-#contact_notre-equipe-section .card h6 span {
-    font-family: 'HelveticaNeue-Light';
+#contact_notre-equipe-section .card h6 p {
     font-style: italic;
-    font-size: 2.5vh;
+    display: inline-block;
 }
 #contact_notre-equipe-section .card p {
     text-align: left;
@@ -1267,16 +1207,13 @@ img {
     padding-top: 4%;
     padding-bottom: 4%;
 }
-#footer h6 {
-    font-family: 'Novecentosanswide-Bold';
+#footer h5 {
     color: #666666;
-    font-size: 4.2vh;
     text-transform: uppercase;
     margin-bottom: 3.9vh;
 }
 #footer ul li{
     font-family: 'HelveticaNeue-Light';
-    font-size: 2.4vh;
     color: #f5f5f5;
     padding-bottom: 2.8vh;
 }
@@ -1296,8 +1233,6 @@ img {
     width: 100%;
 }
 #footer p {
-    font-family: 'HelveticaNeue-Light';
-    font-size: 2.4vh;
     color: #f5f5f5;
     line-height: 1.5;
 }

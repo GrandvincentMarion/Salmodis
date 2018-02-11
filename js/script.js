@@ -70,7 +70,7 @@ $(document).ready(function() {
         $('.fp-nav__dot').prepend('<div class="fp-nav__arrow arrow-top"><img src="./img/arrow-top.svg"></div>');
         $('.fp-nav__dot').append('<div class="fp-nav__arrow arrow-bottom"><img src="./img/arrow-bottom.svg"></div>');
 
-        $('.fp-nav__social').append('<ul><li><img src="./img/phone.svg"><div class="fp-tooltip right phone">01 46 87 50 43</div></li><li><img src="./img/mail.svg"><div class="fp-tooltip right mail">salmodis@gmail.com</div></li><li><img src="./img/placement.svg"><div class="fp-tooltip right placement">SALMODIS, SA LE CREN<br />70C allée de Saint Malo<br />Marée 80115<br />94519 Rungis CEDEX</div></li></ul>');
+        $('.fp-nav__social').append('<ul><li><img src="./img/phone.svg"><div class="fp-tooltip right phone"><p class="little-small">01 46 87 50 43</p></div></li><li><img src="./img/mail.svg"><div class="fp-tooltip right mail"><p class="little-small">salmodis@gmail.com</p></div></li><li><img src="./img/placement.svg"><div class="fp-tooltip right placement"><p class="little-small">SALMODIS, SA LE CREN<br />70C allée de Saint Malo<br />Marée 80115<br />94519 Rungis CEDEX</p></div></li></ul>');
 
         $('.fp-nav__arrow.arrow-top').click(function() {
             var prevSection = $('.section.fp-section.fp-table').first().data('anchor');
