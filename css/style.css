@@ -79,6 +79,7 @@ html {
     padding-right: 8.4vh !important;
 }
 body {
+    font-size: 2.45vh;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -760,11 +761,6 @@ img {
     margin: auto;
     height: 7em;
     z-index: 4;
-}
-#homepage_header-section .header-caption [class*="col-"],
-#homepage_header-section .header-caption .row  {
-    height: 100%;
-    display: block;
 }
 #homepage_header-section .header-caption .caption-logo img{
     width: 70%;

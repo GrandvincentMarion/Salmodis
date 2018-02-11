@@ -5,7 +5,7 @@ $(document).ready(function() {
     var names = [];
     var anchors = [];
 
-    $('.section.withAnchor').each(function() {
+    $('.section').each(function() {
         var nameSection = $(this).data('name'); 
         var nameParts = nameSection.split();
         names.push(nameParts[0]);
@@ -13,6 +13,7 @@ $(document).ready(function() {
         var anchorSection = $(this).data('anchor'); 
         var anchorParts = anchorSection.split();
         anchors.push(anchorParts[0]);
+        
     });
 
 	$('#fullpage').fullpage({
@@ -90,6 +91,14 @@ $(document).ready(function() {
                 $(this).parent('li').remove();
             }
         });
+
+        if ( $('.section').hasClass('removeAnchor')) {
+            $('.section.removeAnchor').each(function() {
+                var indexToRemove = $(this).index();
+                $('#fp-nav .fp-nav__dot ul li').eq(indexToRemove).css({'visibility': 'hidden', 'display' : 'none'})
+            }); 
+        }
+        
     
     }
     MenuLateral();
@@ -98,15 +107,13 @@ $(document).ready(function() {
 
 
 function wowAnime() {
-    wow = new WOW(
-        {
-            boxClass:     'wow',      // default
-            animateClass: 'animated', // default
-            offset:       -150,          // default
-            mobile:       false,       // default
-            live:         true        // default
-        }
-    ).init(); 
+    wow = new WOW({
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       -150,          // default
+        mobile:       false,       // default
+        live:         true        // default
+    }).init(); 
 }
 
 
