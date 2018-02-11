@@ -1,3 +1,5 @@
+wowAnime();
+
 $(document).ready(function() {
     
     var names = [];
@@ -22,11 +24,6 @@ $(document).ready(function() {
 		navigationPosition: 'right',
         navigationTooltips: names,
         scrollingSpeed: 1000,
-        scrollOverflow: true,
-        scrollOverflowOptions: {
-            click: false,  
-            wheelStep: 20
-        },
 
         onLeave: function(index, nextIndex, direction){
             var nbSection = $('.section').length;
@@ -55,7 +52,7 @@ $(document).ready(function() {
         },
         afterRender: function(){
             movingSlider();
-            wowAnime();
+           
         },
         afterResize: function(){
             movingSlider();
@@ -134,11 +131,11 @@ menuResponsive();
 
 
 
-// slider first section
+// slider fullpage #homepage
 function fullSlideshow() {
     var background = document.querySelectorAll('.full-background img.background');
     if (background.length === 0) {
-       return
+    return
     }
     var backgroundLength = background.length
     var index = 0;
@@ -181,6 +178,7 @@ numberOfYears();
 
 
 function movingSlider() {
+
     var slider      = document.querySelector('.galerie-slideshow');
     if (slider === null) {
         return
@@ -204,10 +202,22 @@ function movingSlider() {
             slider.style.left = 0 + "px";
         }
     },10);
-
+  
 }
 
+function formulaire() {
+    var thisInput = document.querySelectorAll('form .champs input, form .champs textarea');
+    for (var i = 0; i < thisInput.length; i++) {
+        thisInput[i].addEventListener("focus", function(event){
+            event.target.parentNode.children[0].classList.add('active');
+        });
 
+        thisInput[i].addEventListener("focusout", function(event){
+            if ( event.target.value === "") {
+                event.target.parentNode.children[0].classList.remove('active');
+            }
+        });
+    }
 
-
-
+}
+formulaire()

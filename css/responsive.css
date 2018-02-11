@@ -1,7 +1,4 @@
 @media screen and (max-width: 1024px) and (min-width: 767px) and (orientation: landscape){
-    html {
-        overflow: auto !important;
-    }
     #homepage_produits-section .navbar-middle ul li {
         padding-right: 9%;
     }
@@ -14,9 +11,6 @@
 }
 
 @media screen and (max-width: 1024px) and (min-width: 767px){
-    html {
-        overflow: auto !important;
-    }
     #homepage_produits-section h3{
         font-size: 30px;
     }
@@ -64,21 +58,12 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-    html {
-        overflow: auto !important;
-    }
-    h4 {
-        font-size: 30px;
-    }
+@media screen and (max-width: 767px) {  
     .xs-hidden {
         display: none !important;
     }
     .only-mobile {
         display: block;
-    }
-    h1 {
-        font-size: 65px;
     }
     .navbar ul {
         width: 60%;

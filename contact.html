@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset='utf-8'>
         <title>Salmodis</title>
@@ -28,89 +28,172 @@
                     </div>
 
                     <div class="col-md-1 col-sm-1 col-md-1 col-xs-2">
-                        <div class="navbar-icon">
-                            <a href="index.html">
-                                <img src="img/waves-menu.svg" alt="">
-                            </a>
+                        <div class="row">
+                            <div class="navbar-icon">
+                                <a href="index.html">
+                                    <img src="img/waves-menu.svg" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-md-10 col-sm-10 xs-hidden"> 
-                        <ul class="menu">
-                            <li>
-                                <a href="index.html">ACCUEIL</a>
-                            </li>                            
-                            <li>
-                                <a href="produits.html">LES PRODUITS</a>
-                            </li>
-                            <li>
-                                <a href="galerie-photo.html">GALERIE PHOTO</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">CONTACT</a>
-                            </li>
-                        </ul>
+                        <div class="row">
+                            <ul class="menu">
+                                <li>
+                                    <a href="index.html">ACCUEIL</a>
+                                </li>                            
+                                <li>
+                                    <a href="produits.html">LES PRODUITS</a>
+                                </li>
+                                <li>
+                                    <a href="galerie-photo.html">GALERIE PHOTO</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
 
         <div id="fullpage" class="index">
 
-            <div class="section withAnchor" id="produits_header-section" data-name="Contact" data-anchor="contact">
+            <div class="section withAnchor" id="contact_header-section" data-name="Contact" data-anchor="information-contact">
+
                 <div class="header-img-page">
                     <img class="background" src="img/header_les_produits.jpg" alt="">
                     <div class="header-title">
-                        <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">CONTACT</h2>
+                        <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">CONTACT</h1>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                            
+
+                <div class="content-header-img-page">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                                <div class="row">
+                                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Nos bureaux sont ouverts du lundi au vendredi de 7h à 17h.
+                                    <br /><br />
+                                    Tel : 01 77 86 79 54<br />
+                                    email : salmodis@gmail.com
+                                    <br /><br />
+                                    Le Marée Rungis ouvre ses portes du lundi au samedi.</p>
+
+                                    <div class="button wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                                        <a href="produits.html#produits-salaison">Voir les horaires</a>
+                                    </div>       
+                                </div>                     
+                            </div>
                         </div>
                     </div>
-                </div> 
+                </div>
+                
             </div>
 
-            <!-- section Prendre contact -->
-            <div class="section withAnchor" id="prendre-contact-section" data-name="Prendre contact" data-anchor="prendre-contact">
-                <div class="title-center">
-                    <h4>Une question ?</h4>
-                </div>                
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+            <div class="section withAnchor" id="contact_formulaire-section" data-name="Prendre contact" data-anchor="prendre-contact">        
+                <div class="content">
+                    <div class="title-center in-section wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <h4>Une question ?</h4>
+                    </div>       
 
-                            <div class="row">
-
-                               
-
+                    <div class="container">           
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 ">
+                                <div class="row">
+                                    <form action="" method="get" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                        
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label for="nom">Nom*</label>
+                                                    <input type="text" id="nom" required=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label for="prenom">Prénom*</label>
+                                                    <input type="text" id="prenom" required=""/>
+                                                </div>
+                                            </div>
+                                        </div>      
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label for="societe">Société</label>
+                                                    <input type="text" id="societe" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label for="tel">Tel</label>
+                                                    <input type="tel" id="tel" minlength="10" maxlength="10"/>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label for="mail">Email*</label>
+                                                    <input type="email" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required=""/>
+                                                </div>     
+                                            </div>
+                                        </div>                                
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label for="objet">Objet*</label>
+                                                    <input type="text" id="objet" required=""/>
+                                                </div>     
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label class="label-with-textarea" for="message">Message*</label>
+                                                    <textarea id="message" required=""></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="champs">
+                                            <p>* Ces champs sont obligatoires</p>
+                                            <input type="submit" value="ENVOYER" />
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                            
+                    
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
 
 
             <!-- section Ou nous trouver -->
-            <div class="section withAnchor" id="map-section" data-name="Où nous trouver" data-anchor="nous-trouver">
-                <div class="container visible">        
-                    <div class="row">
-                        <div class="content">   
-                            <div class="title-center in-section">
-                                <h4>où nous trouver</h4>
-                            </div>                                              
-                            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">      
+            <div class="section withAnchor" id="contact_map-section" data-name="Où nous trouver" data-anchor="nous-trouver">
+
+                <div class="content">  
+                    <div class="title-center in-section wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <h4>où nous trouver</h4>
+                    </div>                      
+                    <div class="container">        
+                        <div class="row">
+
+                            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">  
                                 <div class="row">
-                                    <div class="map-iframe">
+                                    <div class="map-iframe wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7997.641410305061!2d2.345383721152903!3d48.75078049870955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1517081096612" width="" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                                     </div>
 
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>       
@@ -118,16 +201,20 @@
             </div>
 
 
-            <!-- section Partenaire -->
-            <div class="section withAnchor" id="a-propos-section" data-name="À-propos" data-anchor="a-propos"> 
-                <div class="container visible">        
-                    <div class="row">
-                        <div class="content">   
-                            <div class="title-center in-section">
-                                <h4>à propos</h4>
-                            </div>                                              
-                            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">      
-                                <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles, prêtes à repondre à toutes vos questions. Si vous venez la nuit, vous pouvez rencontrer Romain. Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles, prêtes à repondre à toutes vos questions. Si vous venez la nuit, vous pouvez rencontrer Romain.</p> 
+            <!-- section A propos -->
+            <div class="section withAnchor" id="contact_a-propos-section" data-name="À-propos" data-anchor="a-propos"> 
+
+                <div class="content">  
+                    <div class="title-center in-section wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <h4>à propos</h4>
+                    </div>                       
+                    <div class="container">        
+                        <div class="row">
+                                                                
+                            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+                                <div class="row">
+                                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles, prêtes à repondre à toutes vos questions. Si vous venez la nuit, vous pouvez rencontrer Romain. Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles, prêtes à repondre à toutes vos questions. Si vous venez la nuit, vous pouvez rencontrer Romain.</p> 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -137,141 +224,206 @@
 
 
             <!-- section Equipe -->
-            <div class="section withAnchor" id="equipe-section" data-name="Notre équipe" data-anchor="notre-equipe">
-                <div class="title-center">
+            <div class="section withAnchor" id="contact_notre-equipe-section" data-name="Notre équipe" data-anchor="notre-equipe">
+                <div class="content">    
+                <div class="title-center in-section wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                     <h4>L'équipe</h4>
-                </div>                
+                </div>         
+                  
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
 
+                        <div class="col-md-12">
                             <div class="row">
 
-                                <div class="card">
-                                    <div class="col-md-3 col-sm-12 col-xs-12">
-                                        <img src="img/card-1.png" alt="">
-                                    </div>
-                                    <div class="col-md-8 col-sm-12 col-xs-12">
-                                        <h6>Pascal, <i>Gérant</i></h6>
-                                        <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles</p>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="col-md-3 col-sm-12 col-xs-12">
-                                        <img src="img/card-2.png" alt="">
-                                    </div>
-                                    <div class="col-md-8 col-sm-12 col-xs-12">
-                                        <h6>Céline, <i>Responsable des ventes</i></h6>
-                                        <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles</p>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="col-md-3 col-sm-12 col-xs-12">
-                                        <img src="img/card-3.png" alt="">
-                                    </div>
-                                    <div class="col-md-8 col-sm-12 col-xs-12">
-                                        <h6>Sophie, <i>Responsable de l’administration</i></h6>
-                                        <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles</p>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <img src="img/card-1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <h6>Pascal, <span>Gérant</span></h6>
+                                                    <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="col-md-3 col-sm-12 col-xs-12">
-                                        <img src="img/card-4.png" alt="">
+
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <img src="img/card-2.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <h6>Céline, <span>Responsable des ventes</span></h6>
+                                                    <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-8 col-sm-12 col-xs-12">
-                                        <h6>Romain, <i>Responsable de la logistique</i></h6>
-                                        <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles</p>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="row">                                
+                                        <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <img src="img/card-3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <h6>Sophie, <span>Responsable de l’administration</span></h6>
+                                                    <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>                                
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="row">   
+                                        <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <img src="img/card-4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <h6>Romain, <span>Responsable de la logistique</span></h6>
+                                                    <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité.</p>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>                             
 
                             </div>
                             
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
 
 
-            <!-- section FOOTER -->
-            <div class="section fp-auto-height fp-section" id="footer" data-name="Contact" data-anchor="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                            <div class="row">
-                                <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
-                                    <h6>Menu</h6>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Les produits d'aquaculture</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Les produits du salaison</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Galerie photos</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
+            <!-- section Partenaire -->
+            <div class="section withAnchor" id="contact_partenaires-section" data-name="Partenaires" data-anchor="partenaires"> 
 
-                                <div class="col-md-3 col-sm-3">
-                                    <h6>Contact</h6>
-                                    <p>SALMODIS, SA LE CREN</p>
-                                    <p>70C allée de Saint Malo</p>
-                                    <p>Marée 80115</p>
-                                    <p>94519 Rungis CEDEX</p>
-                                    <p class="num">Tel : 01 46 87 50 43</p>
-                                    <p>Fax : 01 46 87 83 87</p>
-                                    <p class="mail">Email : <a href="mailto:salmodis@gmail.com">salmodis@gmail.com</a></p>
+                <div class="content">   
+                    <div class="title-center in-section wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <h4>Nos partenaires</h4>
+                    </div>   
+                    <div class="container">        
+                        <div class="row">                                
+                            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+                                <div class="row">
+                                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Salmodis travaille avec des producteurs aquacoles français. La pisciculture de l’Andelle nous fournit l’équivalent de 150 tonnes à l’année en truite arc-en-ciel. La pisciculture de la Lieurre est spécilisée dans l’élevage d’alvins. Enfin, la saumonerie de l’Ourc de Picardie fume et tranche le saumon de manière artisale depuis plus de 50 ans.</p> 
                                 </div>
-
-                                <div class="col-md-3 col-sm-3">
-                                    <h6>Nos partenaires</h6>
-                                    <ul>
-                                        <li>La pisciculture de l’Andelle</li>
-                                        <li>La pisciculture de Ménesqueville</li>
-                                        <li>La saumonerie de l’Ourq</li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-md-1 col-sm-1 xs-hidden">
-                                    <ul class="social-share">
-                                        <li>
-                                            <a href="#">
-                                                <img src="img/placement.svg" alt="">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <img src="img/facebook.svg" alt="">
-                                            </a>
-                                        </li> 
-                                        <li>
-                                            <a href="#">
-                                                <img src="img/youtube.svg" alt="">
-                                            </a>
-                                        </li>                                                               
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                            <div class="mention-legale">
-                                <p>@Salmodis 2018</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- section FOOTER -->
+            <div class="section fp-auto-height fp-section" id="footer" data-name="Contact" data-anchor="contact">
+                <div class="container">
+                    <div class="row">
+                    
+                        <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
+                            <div class="row">
+                                <h6>Menu</h6>
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Accueil</a>
+                                    </li>                                    
+                                    <li>
+                                        <a href="produits.html#produits-aquaculture-maritime">Les produits d'aquaculture</a>
+                                    </li>
+                                    <li>
+                                        <a href="produits.html#produits.html#produits-salaison">Les produits de salaison</a>
+                                    </li>                                      
+                                    <li>
+                                        <a href="galerie-photo.html">Galerie photos</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3">
+                            <div class="row">
+                                <h6>Contact</h6>
+                                <p>SALMODIS, SA LE CREN</p>
+                                <p>70C allée de Saint Malo</p>
+                                <p>Marée 80115</p>
+                                <p>94519 Rungis CEDEX</p>
+                                <p class="num">Tel : 01 46 87 50 43</p>
+                                <p>Fax : 01 46 87 83 87</p>
+                                <p class="mail">Email : <a href="mailto:salmodis@gmail.com">salmodis@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-3">
+                            <div class="row">
+                                <h6>Nos partenaires</h6>
+                                <ul>
+                                    <li>La pisciculture de l’Andelle</li>
+                                    <li>La pisciculture de Ménesqueville</li>
+                                    <li>La saumonerie de l’Ourq</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-1 col-sm-1 xs-hidden">
+                            <div class="row">
+                                <ul class="social-share">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/placement.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/facebook.svg" alt="">
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/youtube.svg" alt="">
+                                        </a>
+                                    </li>                                                               
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                            <div class="row">
+                                <div class="mention-legale">
+                                    <p>@Salmodis 2018</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
         
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
-        
         <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js'></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script src='js/script.js'></script>
