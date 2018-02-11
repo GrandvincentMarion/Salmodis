@@ -110,7 +110,8 @@ p {
 p.small {
     font-size: 1.3rem;
 }
-p.little-small {
+p.little-small,
+label {
     font-size: 1.2rem;
 }
 p.extra-small {
@@ -157,7 +158,7 @@ img {
 .button {
     display: inline-block;
     font-family: 'HelveticaNeue-Light';
-    border: 0.17vh solid #000000;
+    border: 1px solid #000000;
     margin-top: 3.5em;
     background-color: #fff;
     transition: all 0.4s ease;
@@ -325,7 +326,7 @@ img {
     width: auto;
 }
 .navbar ul li.active a {
-    border-bottom: 0.17vh solid #fff;
+    border-bottom: 1px solid #fff;
     padding-bottom: 0.7vh;
 }
 .menu-responsive {
@@ -384,12 +385,11 @@ img {
     -webkit-transform:translateY(-50%);
     height: auto;
     padding: 2.5vh 0;
-    border-top: dotted 0.18vh #fff;
-    border-bottom: dotted 0.18vh #fff;
+    border-top: dotted 1px #fff;
+    border-bottom: dotted 1px #fff;
 }
 #fp-nav ul li .fp-tooltip {
     font-family: 'HelveticaNeue';
-    font-size: inherit;
     opacity: 1;
     width: 100%;
     color: #000000;
@@ -406,6 +406,7 @@ img {
     margin-top: -0.95vh;
     box-shadow: 0px 0px 3px rgba(3,3,3,0.5);
     cursor: pointer;
+    max-width: 50px;
 }
 #fp-nav ul li .fp-tooltip:before {
     content:"";
@@ -454,7 +455,7 @@ img {
     left: 0;
     right: 0;
     margin: auto;
-    border: 0.18vh solid #fff;
+    border: 1px solid #fff;
     background: transparent;
     position: absolute;
     display: block;
@@ -487,7 +488,6 @@ img {
     margin-top: -0.015vh;
 }
 #fp-nav .fp-nav__social ul li .fp-tooltip p {
-    font-size: 2vh;
     font-family: inherit;
     line-height: 1.3;
 }
@@ -741,7 +741,7 @@ img {
     width: 70%;
 }
 #homepage_header-section .header-caption .caption-txt {
-    border-left: 0.17vh solid #fff;
+    border-left: 1px solid #fff;
     padding-left: 10%;
     height: 100%;
 }
@@ -904,10 +904,10 @@ img {
     -webkit-transition: all 0.3s ease;
 }
 #homepage_produits-section ul.color1 li a:after{
-    border-bottom: 0.33vh solid #23b2c2;
+    border-bottom: 2px solid #23b2c2;
 }
 #homepage_produits-section ul.color2 li a:after{
-    border-bottom: 0.33vh solid #fdac57;
+    border-bottom: 2px solid #fdac57;
 }
 #homepage_produits-section ul li a:hover:after {
     content:"";
@@ -1123,7 +1123,7 @@ img {
 }
 #contact_formulaire-section form .champs input {
     height: 8vh;
-    border: 0.33vh solid #e0e0df;
+    border: 2px solid #e0e0df;
     width: 100%;
     padding: 2vh 1.5vh 1.1vh 1.5vh;
     font-family: 'HelveticaNeue-Light';
@@ -1146,15 +1146,15 @@ img {
 #contact_formulaire-section form .champs p {
     display: inline-block;
     text-align: left;
-    float: left;
     color: #8f8c8c;
     line-height: 1.1;
     letter-spacing: 0.15vh;
     font-style: italic;
+    float: left;
 }
 #contact_formulaire-section form .champs textarea {
     height: 20vh;
-    border: 0.33vh solid #e0e0df;
+    border: 2px solid #e0e0df;
     width: 100%;
     padding: 3vh 1.5vh;
     font-family: 'HelveticaNeue-Light';
@@ -1222,7 +1222,7 @@ img {
 }
 #footer ul li a:after{
     content: "";
-    border-bottom: 0.17vh solid #fff;
+    border-bottom: 1px solid #fff;
     width: 0%;
     position: absolute;
     bottom: -0.7vh;
