@@ -125,7 +125,7 @@ h6 {
     font-size: 2.88vh;
     font-family: 'Novecentosanswide-Bold';
     color: #333333;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.25vh;
 }
 p {
     font-family: 'HelveticaNeue-Light';
@@ -166,7 +166,7 @@ img {
 .button {
     display: inline-block;
     font-family: 'HelveticaNeue-Light';
-    border: 1px solid #000;
+    border: 0.17vh solid #000;
     font-size: 2.7vh;
     margin-top: 3.5em;
     background-color: #fff;
@@ -250,7 +250,7 @@ img {
     -ms-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -webkit-transition: all 0.4s;
-    padding-top: 20px;
+    padding-top: 3.4vh;
 }
 .color1 {
     color: #23b2c2;
@@ -273,13 +273,6 @@ img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-}
-.navbar.sticky {
-    position: fixed;
-    background-color: rgba(0,0,0,0.7);
-    height: 43px;
-    padding-top: 0px;
-    box-shadow: 0 0px 5px #999;
 }
 .navbar .navbar-icon {
     display: table;
@@ -311,18 +304,18 @@ img {
 }
 @keyframes moveTheWave {
   0% { transform: translate3d(0, 0, 0);}
-  100% { transform: translate3d(-60px, 0, 0); }
+  100% { transform: translate3d(-10.2vh, 0, 0); }
 }
 .navbar .navbar-icon object {
     height: 100%;
-    padding: 5px;
+    padding: 0.85vh;
 }
 .navbar .navbar-icon svg {
     margin: 0 auto;
     overflow: hidden;
     display: block;
     position: relative;
-    line-height: 60px;
+    line-height: 10.2vh;
     height: 100%;
     cursor: pointer;
     z-index: 99;
@@ -343,8 +336,8 @@ img {
     font-size: 2.4vh;
 }
 .navbar ul li.active a {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 4px;
+    border-bottom: 0.17vh solid #fff;
+    padding-bottom: 0.7vh;
 }
 .menu-responsive {
     display: none;
@@ -365,8 +358,8 @@ img {
     left: 0;
 }
 .menu-responsive img {
-    width: 17px;
-    height: 17px;
+    width: 2.9vh;
+    height: 2.9vh;
     position: absolute;
     margin-left: 2em;
     margin-top: 2em;
@@ -380,7 +373,7 @@ img {
     display: inline-block;
     height: auto;
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 4.2vh;
 }
 #fp-nav.right {
     right: 0;
@@ -499,7 +492,7 @@ img {
     cursor: pointer;
 }
 #fp-nav .fp-nav__social li:hover .fp-tooltip {
-    right: 5px;
+    right: 0.85vh;
 }
 #fp-nav .fp-nav__social ul li .fp-tooltip {
     margin-top: -0.015vh;
@@ -576,7 +569,7 @@ img {
     margin: auto;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 0px 35px;
+    padding: 0vh 5.9vh;
     font-size: 5.6vh;
 }
 .title-center h4 span {
@@ -591,7 +584,7 @@ img {
 }
 .title-center:before {
     content:"";
-    height: 1px;
+    height:0.17vh;
     width: 100%;
     background-color: #d0d0cf;
     position: absolute;
@@ -606,11 +599,11 @@ img {
     position: relative;
     left: auto;
     transform: inherit;
-    padding: 0px 35px;
+    padding: 0vh 5.9vh;
 }
 .title-center.in-section:before{
     content: "";
-    height: 1px;
+    height: 0.17vh;
     width: 1000%;
     background-color: #d0d0cf;
     position: absolute;
@@ -777,7 +770,7 @@ img {
     width: 70%;
 }
 #homepage_header-section .header-caption .caption-txt {
-    border-left: 1px solid #fff;
+    border-left: 0.17vh solid #fff;
     padding-left: 10%;
     height: 100%;
 }
@@ -788,7 +781,7 @@ img {
     display: block;
     width: 100%;
     height: 100%;
-    padding-top: 10px;
+    padding-top: 1.7vh;
 }
 #homepage_header-section .header-caption .caption-icon img{
     width: 7.6vh;
@@ -841,7 +834,7 @@ img {
     font-family: 'HelveticaNeue';
     font-size: 2.7vh;
     color: #000;
-    margin-top: 10px;
+    margin-top: 1.7vh;
 }
 #homepage_entreprise-section .card p {
     font-family: 'HelveticaNeue-Light';
@@ -849,7 +842,7 @@ img {
     padding: 0;
     margin: 0;
     font-size: 2.3vh;
-    margin-top: 2px;
+    margin-top: 0.3vh;
 }
 
 /* 
@@ -870,7 +863,7 @@ img {
 }
 #homepage_produits-section p{
     text-align: center;
-    padding: 0px 15%;
+    padding: 0% 15%;
     margin-top: 2em;
     margin-bottom: 0.5em;
 }
@@ -942,13 +935,13 @@ img {
     padding-right: 0;
 }
 #homepage_produits-section ul li a {
-    padding-bottom: 5px;
+    padding-bottom: 0.85%;
     position: relative;
 }
 #homepage_produits-section ul li a:after {
     content: "";
     width: 0%;
-    height: 2px;
+    height: 0.3vh;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -958,10 +951,10 @@ img {
     -webkit-transition: all 0.3s ease;
 }
 #homepage_produits-section ul.color1 li a:after{
-    border-bottom: 2px solid #23b2c2;
+    border-bottom: 0.33vh solid #23b2c2;
 }
 #homepage_produits-section ul.color2 li a:after{
-    border-bottom: 2px solid #fdac57;
+    border-bottom: 0.33vh solid #fdac57;
 }
 #homepage_produits-section ul li a:hover:after {
     content:"";
@@ -972,7 +965,7 @@ img {
 * --------------------------------------- */
 #homepage_commentaires-section .commentaires-content p{
     position: relative;
-    padding: 0px 5vh;
+    padding: 0% 5vh;
     color: #6e6c6c;
     font-style: italic;
 }
@@ -996,7 +989,7 @@ img {
 }
 #homepage_commentaires-section .commentaires-content h6{
     position: relative;
-    padding: 0px 5vh;
+    padding: 0% 5vh;
     color: #6e6c6c;
     line-height: 2;
     
@@ -1023,7 +1016,7 @@ img {
     background-repeat: no-repeat;
     display: block;
     float: left;
-    margin: 0px 0.85vh;
+    margin: 0% 0.85vh;
     margin-top: 3.3vh;
 }
 
@@ -1117,7 +1110,7 @@ img {
     font-size: 5.5vh;
 }
 #produits_fiches-produits-section .produits_fiches-produits__block {
-    padding: 0px 5vh;
+    padding: 0% 5vh;
 }
 #produits_fiches-produits-section .produits_fiches-produits__img {
     height: 22vh;
@@ -1162,7 +1155,7 @@ img {
     overflow: hidden;
 }
 #contact_formulaire-section form .champs {
-    margin: 8px 5px;
+    margin: 1.35vh 0.85vh;
 }
 #contact_formulaire-section form .champs label {
     position: absolute;
@@ -1170,7 +1163,7 @@ img {
     font-family: 'HelveticaNeue-Light';
     color: #8f8c8c;
     font-size: 2.4vh;
-    padding: 0px 2vh;
+    padding: 0% 2vh;
     letter-spacing: 0.15vh;
     transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -1185,7 +1178,7 @@ img {
 }
 #contact_formulaire-section form .champs input {
     height: 8vh;
-    border: 2px solid #e0e0df;
+    border: 0.33vh solid #e0e0df;
     width: 100%;
     padding: 2vh 1.5vh 1.1vh 1.5vh;
     font-family: 'HelveticaNeue-Light';
@@ -1219,7 +1212,7 @@ img {
 }
 #contact_formulaire-section form .champs textarea {
     height: 20vh;
-    border: 2px solid #e0e0df;
+    border: 0.33vh solid #e0e0df;
     width: 100%;
     padding: 3vh 1.5vh;
     font-family: 'HelveticaNeue-Light';
@@ -1296,10 +1289,10 @@ img {
 }
 #footer ul li a:after{
     content: "";
-    border-bottom: 1px solid #fff;
+    border-bottom: 0.17vh solid #fff;
     width: 0%;
     position: absolute;
-    bottom: -4px;
+    bottom: -0.7vh;
     left: 0;
     transition: all 0.3s;
 }
@@ -1313,7 +1306,7 @@ img {
     line-height: 1.5;
 }
 #footer p.num {
-    padding-bottom: 0px;
+    padding-bottom: 0%;
     padding-top: 2.5vh;
 }
 #footer p.mail {
