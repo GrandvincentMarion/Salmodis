@@ -3,16 +3,72 @@
         width: 85%;
     }
 }
-@media screen and (max-width: 1024px) and (min-width: 767px) and (orientation: landscape){
+@media screen and (max-width: 1110px) and (min-width: 1024px){
 
 }
 
-@media screen and (max-width: 1024px) and (min-width: 767px){
-    
+@media screen and (max-width: 1024px) and (min-width: 768px) and (orientation: landscape){
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait){
+    h1.big {
+        font-size: 10rem;
+    }
+    h2 {
+        font-size: 4.5rem;
+    }
+    [class*="col-"].float-right {
+        float: none;
+    }
+    .full-image img {
+        width: 100vw;
+        height: auto;
+        object-fit: none;
+    }
+    #homepage_produits-section .col-md-6:nth-child(2) {
+        height: 40%;
+    }
+    #homepage_produits-section .col-md-6:nth-child(3) {
+        height: 60%;
+    }
+    #homepage_produits-section .navbar-middle .navbar-icon {
+        top: 40%;
+    }
+    #homepage_produits-section ul {
+        top: 18%;
+        width: 100%;
+        right: 0;
+        left: 0;
+    }
+    #homepage_produits-section .caption-icon {
+        bottom: 1%;
+    }
+    #homepage_entreprise-section .card p {
+        margin-bottom: 3em;
+    }
+    #homepage_commentaires-section .commentaires-content .commentaires-name {
+        margin-top: 2.5%;
+    }
+    #homepage_commentaires-section .note {
+        margin-bottom: 5em;
+    }
+    #homepage_commentaires-section .note .note-star {
+        margin-top: 0;
+    }
+    #homepage_galerie-photo-section .galerie-slideshow {
+        height: 270px;
+    }
+    #footer ul li {
+        padding-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 767px) {  
-
+    html {
+        padding-right: 0px !important;
+        overflow: visible !important;
+    }
 }
 @media screen and (max-width: 420px) {
 

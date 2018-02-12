@@ -42,7 +42,7 @@ html {
     color: #000000;
     font-size: 62.5%;
     overflow: hidden!important;
-    padding-right: 8.4vh !important;
+    padding-right: 50px !important;
 }
 body {
     width: 100%;
@@ -148,6 +148,9 @@ img {
     height: 100%;
     overflow: hidden;
 }
+[class*="col-"].float-right {
+    float: right;
+}
 .row {
     height: 100%;
     display: block;
@@ -157,7 +160,7 @@ img {
     display: inline-block;
     font-family: 'HelveticaNeue-Light';
     border: 1px solid #000000;
-    margin-top: 3.5em;
+    margin-top: 3em;
     background-color: #fff;
     transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
@@ -392,7 +395,7 @@ img {
     width: 100%;
     color: #000000;
     background-color: #fff;
-    padding: 1.2vh 8.5vh 1.2vh 10px;
+    padding: 7px 50px 7px 10px;
     line-height: 1.3;
     position: relative;
     height: 100%;
@@ -421,7 +424,7 @@ img {
     -webkit-transform: translateY(-50%);
 }
 #fp-nav ul li .fp-tooltip.right {
-    right: -84vh;
+    right: -500px;
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -471,7 +474,7 @@ img {
 }
 #fp-nav .fp-nav__social ul li {
     height: 16px;
-    margin: 1vh auto;
+    margin: 6px auto;
 }
 #fp-nav .fp-nav__social ul li img {
     width: 16px;
@@ -483,7 +486,7 @@ img {
     right: 5px;
 }
 #fp-nav .fp-nav__social ul li .fp-tooltip {
-    margin-top: -0.015vh;
+    margin-top: -0.08px;
 }
 #fp-nav .fp-nav__social ul li .fp-tooltip p {
     font-family: inherit;
@@ -556,7 +559,7 @@ img {
     background-color: #fff;
     z-index: 1;
     position: relative;
-    padding: 0vh 35px;
+    padding: 0px 35px;
 }
 .title-center h4 {
     z-index: 1;
@@ -788,7 +791,7 @@ img {
     height: 100%;
     overflow: hidden;
     position: relative;
-    padding-top: 10.5px;
+    padding-top: 3em;
 }
 #homepage_entreprise-section .card .card-unit {
     width: 100%;
@@ -946,7 +949,7 @@ img {
 }
 #homepage_commentaires-section .commentaires-content .commentaires-name {
     color:#000000;
-    margin-top: 30px;
+    margin-top: 5%;
     font-family: 'HelveticaNeue';
 }
 #homepage_commentaires-section .note {
@@ -1099,7 +1102,7 @@ img {
     overflow: hidden;
 }
 #contact_formulaire-section form .champs {
-    margin: 7.5px 0.85vh;
+    margin: 7.5px 5px;
 }
 #contact_formulaire-section form .champs label {
     position: absolute;
@@ -1107,32 +1110,32 @@ img {
     font-family: 'HelveticaNeue-Light';
     color: #8f8c8c;
     padding: 0% 12px;
-    letter-spacing: 0.15vh;
+    letter-spacing:0.8px;
     transition: all 0.3s;
     -ms-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
 }
 #contact_formulaire-section form .champs label.active {
-    top: 1.9vh;
-    letter-spacing: 0vh;
+    top: 11px;
+    letter-spacing: 0px;
     opacity: 0.7;
     font-size: 0.75em;
 }
 #contact_formulaire-section form .champs input {
-    height: 8vh;
+    height: 47px;
     border: 2px solid #e0e0df;
     width: 100%;
-    padding: 12px 1.5vh 1.1vh 1.5vh;
+    padding: 12px 10px 6.5px 10px;
     font-family: 'HelveticaNeue-Light';
-    letter-spacing: 0.15vh;
+    letter-spacing: 0.8px;
 }
 #contact_formulaire-section form .champs input[type=submit] {
     width: auto;
     float: right;
     background-color: #fff;
     height: auto;
-    padding: 12px 6vh;
+    padding: 12px 35px;
     cursor: pointer;
     font-family: 'HelveticaNeue';
     color: #8f8c8c;
@@ -1146,17 +1149,17 @@ img {
     text-align: left;
     color: #8f8c8c;
     line-height: 1.1;
-    letter-spacing: 0.15vh;
+    letter-spacing: 0.8px;
     font-style: italic;
     float: left;
 }
 #contact_formulaire-section form .champs textarea {
-    height: 20vh;
+    height: 120px;
     border: 2px solid #e0e0df;
     width: 100%;
-    padding: 17.5px 1.5vh;
+    padding: 17.5px 10px;
     font-family: 'HelveticaNeue-Light';
-    letter-spacing: 0.15vh;
+    letter-spacing: 0.8px;
 }
 
 #contact_map-section .map-iframe {
