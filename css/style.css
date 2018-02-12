@@ -407,7 +407,7 @@ img {
     margin-top: -5.5px;
     box-shadow: 0px 0px 3px rgba(3,3,3,0.5);
     cursor: pointer;
-    max-width: 50px;
+    max-width: 500px;
 }
 #fp-nav ul li .fp-tooltip:before {
     content:"";
