@@ -65,7 +65,32 @@
         padding-right: 0px !important;
         overflow: visible !important;
     }
-}
-@media screen and (max-width: 420px) {
-
+    h1.big {
+        font-size: 5.5rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    .button {
+        margin-top: 1em;
+    }
+    #homepage_produits-section .col-md-6{
+        height: 50%;
+    }
+    #homepage_produits-section ul {
+        top: 75%;
+        width: 100%;
+        right: 0;
+        left: 0;
+    }
+    #homepage_produits-section .caption-icon {
+        display: none;
+    }
+    #homepage_produits-section p {
+        margin-top: 1em;
+        padding: 0 5%;
+    }
 }

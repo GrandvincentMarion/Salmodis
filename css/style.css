@@ -331,7 +331,6 @@ img {
     padding-bottom: 4px;
 }
 .menu-responsive {
-    display: none;
     background-color: rgba(0,0,0,0.9);
     position: fixed;
     width: 55%;
