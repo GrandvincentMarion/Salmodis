@@ -23,7 +23,7 @@
     }
     .full-image img {
         width: 100vw;
-        height: auto;
+        height: 50vh;
         object-fit: none;
     }
     #homepage_produits-section .col-md-6{
