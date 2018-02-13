@@ -119,7 +119,9 @@ function wowAnime() {
 
 //menu responsive 
 function menuResponsive() {
-    
+    document.querySelector(".navbar-icon a").addEventListener("click", function(event) {
+        event.preventDefault();
+    }, false);
     var menuResponsive = document.querySelector('.menu-responsive');
     var copy = document.querySelector('.navbar ul.menu').cloneNode(true);
     menuResponsive.appendChild(copy)

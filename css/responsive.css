@@ -77,20 +77,90 @@
     .button {
         margin-top: 1em;
     }
-    #homepage_produits-section .col-md-6{
-        height: 50%;
+    .navbar .navbar-icon {
+        display: block;
+        margin: auto;
+        float: left;
     }
-    #homepage_produits-section ul {
-        top: 75%;
+    .content {
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    .full-image {
+        position: relative;
+    }
+    .full-image img {
         width: 100%;
-        right: 0;
-        left: 0;
+        height: auto;
     }
-    #homepage_produits-section .caption-icon {
+    .fp-section.fp-table, 
+    .fp-slide.fp-table,
+    .fp-tableCell {
+       height: 100% !important;
+    }
+    #homepage_header-section .header-title {
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        margin: 40% 0;
+    }
+    #homepage_produits-section .navbar-middle .navbar-icon {
+        display: none;
+    }
+    #homepage_header-section .header-caption {
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);        
+    }
+    #homepage_produits-section .content{
+        margin: 15% 0;
+    }
+    #homepage_produits-section .caption-icon,
+    #homepage_produits-section ul {
         display: none;
     }
     #homepage_produits-section p {
         margin-top: 1em;
         padding: 0 5%;
+    }
+    #homepage_entreprise-section .card img {
+        width: 130px;
+    }
+    #homepage_entreprise-section .content {
+        padding: 15% 0 25% 0;
+    }
+    #homepage_entreprise-section .card p {
+        margin: 10px 0 20px 0;
+        line-height: 1.4;
+    }
+    #homepage_commentaires-section .commentaires-content .commentaires-name {
+        margin-top: 2.5%;
+    }
+    #homepage_commentaires-section .note {
+        margin-bottom: 10%;
+    }
+    #homepage_commentaires-section .note .note-star {
+        margin-top: 5px;
+    }
+    #homepage_galerie-photo-section .galerie-txt {
+        margin-bottom: 60%;
+        margin-top: 10%;
+    }
+    #footer h5 {
+        margin-bottom:10px;
+        margin-top: 30px;
+    }
+    #footer ul li {
+        padding-bottom: 5px;
     }
 }
