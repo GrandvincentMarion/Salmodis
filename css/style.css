@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'HelveticaNeue';
     src: url("../fonts/HelveticaNeueLT-Roman.eot");
-    src: url("../fonts/HelveticaNeueLT-Roman.eot?#iefix") format("embedded-opentype"), 
-    url("../fonts/HelveticaNeueLT-Roman.woff") format("woff"), 
+    src: url("../fonts/HelveticaNeueLT-Roman.woff") format("woff"), 
     url("../fonts/HelveticaNeueLT-Roman.woff2") format("woff2"), 
     url("../fonts/HelveticaNeueLT-Roman.ttf") format("truetype"),
     url('../fonts/HelveticaNeueLT-Roman.svg') format('svg');
@@ -10,8 +9,7 @@
 @font-face {
     font-family: 'HelveticaNeue-Light';
     src: url("../fonts/HelveticaNeueLT-Light.eot");
-    src: url("../fonts/HelveticaNeueLT-Light.eot?#iefix") format("embedded-opentype"), 
-    url("../fonts/HelveticaNeueLT-Light.woff") format("woff"), 
+    src: url("../fonts/HelveticaNeueLT-Light.woff") format("woff"), 
     url("../fonts/HelveticaNeueLT-Light.woff2") format("woff2"), 
     url("../fonts/HelveticaNeueLT-Light.ttf") format("truetype"),
     url('../fonts/HelveticaNeueLT-Light.svg') format('svg');
@@ -19,16 +17,14 @@
 @font-face {
     font-family: 'Novecentosanswide-Bold';
     src: url("../fonts/Novecentosanswide-Bold.eot");
-    src: url("../fonts/Novecentosanswide-Bold.eot?#iefix") format("embedded-opentype"), 
-    url("../fonts/Novecentosanswide-Bold.ttf") format("truetype"),
-    url('../fonts/Novecentosanswide-Bold.otf') format('truetype'),
+    src: url('../fonts/Novecentosanswide-Bold.woff') format('woff'),
+    url('../fonts/Novecentosanswide-Bold.woff2') format('woff2'),
     url('../fonts/Novecentosanswide-Bold.svg') format('svg');
 }
 @font-face {
     font-family: 'Parisienne-Regular';
     src: url("../fonts/Parisienne-Regular.eot");
-    src: url("../fonts/Parisienne-Regular?.eot#iefix") format("embedded-opentype"), 
-    url("../fonts/Parisienne-Regular.ttf") format("truetype"),
+    src: url("../fonts/Parisienne-Regular.ttf") format("truetype"),
     url('../fonts/Parisienne-Regular.woff') format('woff'),
     url('../fonts/Parisienne-Regular.woff2') format('woff2');
 }
@@ -1107,6 +1103,8 @@ img {
     position: absolute;
     top: 23.5px;
     font-family: 'HelveticaNeue-Light';
+    font-weight: 100;
+    letter-spacing: 0.8px;
     color: #8f8c8c;
     padding: 0% 12px;
     letter-spacing:0.8px;
@@ -1134,9 +1132,8 @@ img {
     float: right;
     background-color: #fff;
     height: auto;
-    padding: 12px 35px;
+    padding: 10px 30px;
     cursor: pointer;
-    font-family: 'HelveticaNeue';
     color: #8f8c8c;
 }
 #contact_formulaire-section form .champs input:focus,
