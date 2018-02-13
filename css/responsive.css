@@ -101,6 +101,9 @@
     .fp-slide.fp-table,
     .fp-tableCell {
        height: 100% !important;
+       display: block;
+        overflow: hidden;
+        table-layout: inherit;
     }
     #homepage_header-section .header-title {
         position: relative;
@@ -110,9 +113,6 @@
         -moz-transform: translateY(0%);
         -webkit-transform: translateY(0%);
         margin: 40% 0;
-    }
-    #homepage_produits-section .navbar-middle .navbar-icon {
-        display: none;
     }
     #homepage_header-section .header-caption {
         position: relative;
@@ -125,6 +125,7 @@
     #homepage_produits-section .content{
         margin: 15% 0;
     }
+    #homepage_produits-section .navbar-middle .navbar-icon,
     #homepage_produits-section .caption-icon,
     #homepage_produits-section ul {
         display: none;
