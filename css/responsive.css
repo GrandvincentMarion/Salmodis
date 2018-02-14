@@ -111,6 +111,9 @@
         -moz-transform: translateY(0%);
         -webkit-transform: translateY(0%);
     }
+    .title-center.in-section h4 {
+        padding: 0px 15px;
+    }
     .full-image {
         position: relative;
     }
@@ -190,7 +193,7 @@
         padding: 6% 30px;
     }
     #produits_fiches-produits-section .title-center.in-section {
-        margin-top: 8%;
+        margin-top: 15%;
     }
     #footer h5 {
         margin-bottom:10px;
