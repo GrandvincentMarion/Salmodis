@@ -95,6 +95,9 @@
     .button {
         margin-top: 1em;
     }
+    .navbar {
+        height: 100%;
+    }
     .navbar .navbar-icon {
         display: block;
         margin: auto;
