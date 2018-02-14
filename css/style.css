@@ -330,6 +330,7 @@ img {
     background-color: rgba(0,0,0,0.9);
     position: fixed;
     width: 55%;
+    height: 100%;
     top: 0;
     bottom: 0;
     left: -55%;
