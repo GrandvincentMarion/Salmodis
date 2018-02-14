@@ -579,6 +579,7 @@ img {
     position: relative;
     margin-top: 0%;
     margin-bottom: 3%;
+    overflow: hidden;
 }
 .title-center.in-section h4{
     position: relative;

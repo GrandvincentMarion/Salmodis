@@ -11,6 +11,9 @@
     h2 {
         font-size: 4.5rem;
     }
+    h4 {
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait){
@@ -55,6 +58,17 @@
     #homepage_galerie-photo-section .galerie-slideshow {
         height: 270px;
     }
+
+
+    #produits_header-section .ancre-to-fiche-produit {
+        margin-bottom: 20px;
+    }
+    #produits_fiches-produits-section .produits_fiches-produits__img {
+        height: 110px;
+    }
+    #produits_fiches-produits-section .produits_fiches-produits__block {
+        padding: 4% 30px;
+    }
     #footer ul li {
         padding-bottom: 10px;
     }
@@ -67,6 +81,10 @@
     }
     h1.big {
         font-size: 5.5rem;
+    }
+    h1 {
+        font-size: 4.5rem;
+        padding: 0px 30px;
     }
     h2 {
         font-size: 3.5rem;
@@ -104,6 +122,13 @@
        display: block;
         overflow: hidden;
         table-layout: inherit;
+    }
+    .header-img-page {
+        position: relative;
+    }
+    .header-img-page img.background {
+        height: 100%;
+        width: auto;
     }
     #homepage_header-section .header-title {
         position: relative;
@@ -156,6 +181,13 @@
     #homepage_galerie-photo-section .galerie-txt {
         margin-bottom: 60%;
         margin-top: 10%;
+    }
+
+    #produits_fiches-produits-section .produits_fiches-produits__block {
+        padding: 6% 30px;
+    }
+    #produits_fiches-produits-section .title-center.in-section {
+        margin-top: 8%;
     }
     #footer h5 {
         margin-bottom:10px;
