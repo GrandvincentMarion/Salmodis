@@ -96,7 +96,7 @@
         margin-top: 1em;
     }
     .navbar {
-        height: 100%;
+        overflow: visible;
     }
     .navbar .navbar-icon {
         display: block;
