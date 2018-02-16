@@ -3,8 +3,13 @@
         width: 85%;
     }
 }
-@media screen and (max-width: 1439px) and (min-width: 1025px){
+@media screen and (max-width: 1439px) and (min-width: 1200px){
 
+}
+@media screen and (max-width: 1200px) and (min-width: 1025px){
+    h4 {
+        font-size: 2.8rem;
+    }
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     #homepage_produits-section .col-sm-12{
@@ -26,7 +31,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait){
+@media screen and (max-width: 1024px) and (min-width: 768px) {
     h1.big {
         font-size: 10rem;
     }
@@ -115,6 +120,10 @@
     h3 {
         font-size: 3rem;
     }
+    h4 {
+        font-size: 2.8rem;
+    }
+    
     .button {
         margin-top: 1em;
     }
@@ -224,6 +233,12 @@
     }
     #produits_fiches-produits-section .title-center.in-section {
         margin-top: 15%;
+    }
+    #produits_header-section .ancre-to-fiche-produit {
+        margin-bottom: 20px;
+    }
+    #produits_header-section .ancre-to-fiche-produit a {
+        margin: 0;
     }
     #contact_formulaire-section,
     #contact_map-section,
