@@ -1,28 +1,30 @@
-@media screen and (min-width: 1440px) {   
+@media screen and (min-width: 1400px) {   
+    #fp-nav {
+        width: 55px;
+    }
     .container {
-        width: 85%;
+        width: 90%;
+    }
+    html {
+        font-size: 78.125%;
+    }
+    .header-img-page {
+        height: 40%;
+    }
+    .content-header-img-page {
+        top: 40%;
     }
 }
-@media screen and (max-width: 1439px) and (min-width: 1200px){
 
-}
-@media screen and (max-width: 1200px) and (min-width: 1025px){
+@media screen and (max-width: 1200px) and (min-width: 1024px){
     h4 {
         font-size: 2.8rem;
     }
 }
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-    #homepage_produits-section .col-sm-12{
-        height: 50%;
+@media screen and (max-width: 1024px) and (min-width: 992px){
+    .container {
+        width: 920px;
     }
-    #homepage_produits-section ul {
-        top: 75%;
-        width: 100%;
-        right: 0;
-        left: 0;
-    }
-}
-@media screen and (max-width: 1024px) and (min-width: 768px) and (orientation: landscape){
     h2 {
         font-size: 4.5rem;
     }
@@ -31,7 +33,11 @@
     }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .container {
+        width: 700px;
+    }
     h1.big {
         font-size: 10rem;
     }
@@ -44,16 +50,19 @@
     .full-image img {
         width: 100vw;
         height: 50vh;
-        object-fit: none;
+    }
+    .header-img-page {
+        height: 30%;
+    }
+    .content-header-img-page {
+        top: 30%;
+    }
+    .header-img-page img.background {
+        height: 100%;
+        width: auto;
     }
     #homepage_produits-section .col-sm-12{
         height: 50%;
-    }
-    #homepage_produits-section ul {
-        top: 75%;
-        width: 100%;
-        right: 0;
-        left: 0;
     }
     #homepage_produits-section .caption-icon {
         display: none;
@@ -73,8 +82,9 @@
     #homepage_galerie-photo-section .galerie-slideshow {
         height: 270px;
     }
-
-
+    #produits_fiches-produits-section p {
+        line-height: 1.7;
+    }
     #produits_header-section .ancre-to-fiche-produit {
         margin-bottom: 20px;
     }
@@ -82,9 +92,8 @@
         height: 110px;
     }
     #produits_fiches-produits-section .produits_fiches-produits__block {
-        padding: 4% 30px;
+        padding: 4% 0px;
     }
-
     #contact_notre-equipe-section .card img {
         width: 70%;
         margin-bottom: 20px;
@@ -96,9 +105,22 @@
     #contact_notre-equipe-section .card h6 p {
         padding: 0px 0px;
     }
-
     #footer ul li {
         padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) and (max-height: 970px){
+    #produits_header-section .col-sm-12 .col-sm-8{
+        width: 33.33333333%;
+        margin-left: 0;
+    }
+    #produits_header-section .ancre-to-fiche-produit__titre h4 {
+        font-size: 2.25rem;
+    }
+    #produits_fiches-produits-section .col-sm-12 .col-sm-10{
+        width: 33.33333333%;
+        margin-left: 0;
     }
 }
 
@@ -131,8 +153,6 @@
         overflow: visible;
     }
     .navbar .navbar-icon {
-        display: block;
-        margin: auto;
         float: left;
     }
     .content {
@@ -166,6 +186,7 @@
     }
     .header-img-page {
         position: relative;
+        height: 20em;
     }
     .header-img-page img.background {
         height: 100%;
@@ -196,9 +217,14 @@
         margin: 15% 0;
     }
     #homepage_produits-section .navbar-middle .navbar-icon,
-    #homepage_produits-section .caption-icon,
-    #homepage_produits-section ul {
+    #homepage_produits-section .caption-icon{
         display: none;
+    }
+    #homepage_produits-section .nos-produits-d-aquaculture__menu {
+        width: 50%;
+    }
+    #homepage_produits-section .nos-produits-d-aquaculture__menu ul li {
+        margin: 0.5em 0;
     }
     #homepage_produits-section p {
         margin-top: 1em;
@@ -227,12 +253,11 @@
         margin-bottom: 60%;
         margin-top: 10%;
     }
-
-    #produits_fiches-produits-section .produits_fiches-produits__block {
-        padding: 6% 30px;
-    }
     #produits_fiches-produits-section .title-center.in-section {
-        margin-top: 15%;
+        margin-top: 20%;
+    }
+    #produits_fiches-produits-section .produits_fiches-produits__block {
+        padding: 7% 0;
     }
     #produits_header-section .ancre-to-fiche-produit {
         margin-bottom: 20px;
