@@ -82,6 +82,9 @@
     #homepage_galerie-photo-section .galerie-slideshow {
         height: 270px;
     }
+    #homepage_galerie-photo-section .galerie-photo {
+        height: 20%;
+    }
     #produits_fiches-produits-section p {
         line-height: 1.7;
     }
@@ -250,8 +253,11 @@
         margin-top: 5px;
     }
     #homepage_galerie-photo-section .galerie-txt {
-        margin-bottom: 60%;
-        margin-top: 10%;
+        margin-bottom: 40%;
+        margin-top: 20%;
+    }
+    #homepage_galerie-photo-section .galerie-photo {
+        height: 25%;
     }
     #produits_fiches-produits-section .title-center.in-section {
         margin-top: 20%;
