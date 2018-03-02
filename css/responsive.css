@@ -309,6 +309,7 @@
     }
     #contact_map-section .map-iframe {
         margin-top: 5%;
+        padding-bottom: 100%;
     }
     #contact_formulaire-section form .champs input[type=submit] {
         margin-top: 20px;

@@ -1,2 +1,6 @@
 - bug click ancre index
 - icon fleche en svg
+- gallery photo modifier icon
+- gallery photo 1 seule section
+- pointer carte map
+- formulaire de contact 
