@@ -860,7 +860,7 @@ img {
     padding: 12px;
 }
 #homepage_produits-section .nos-produits-d-aquaculture__menu {
-    width: 30%;
+    width: 35%;
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -891,7 +891,7 @@ img {
     display: block;
     padding: 0.8em 0;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
     font-family: 'Novecentosanswide-Bold';
     font-weight: 100;
 }

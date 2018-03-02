@@ -219,6 +219,9 @@
     #homepage_produits-section .content{
         margin: 15% 0;
     }
+    #homepage_header-section .header-caption .caption-txt p {
+        margin-bottom: 15px;
+    }
     #homepage_produits-section .navbar-middle .navbar-icon,
     #homepage_produits-section .caption-icon{
         display: none;
