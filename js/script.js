@@ -183,7 +183,7 @@ $(document).ready(function() {
 			else var str = $(this).serialize();		
 				$.ajax({
 				type: "POST",
-				url: "contact.php",
+				url: "./js/contact.php",
 				data: str,
 				success: function(msg){
 			$("#sendmessage").addClass("show");
