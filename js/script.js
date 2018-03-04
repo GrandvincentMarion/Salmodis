@@ -108,7 +108,7 @@ $(document).ready(function() {
 	// Contact form
 	$('form').submit(function(){
 
-		var f = $(this).find('.form-group'), 
+		var f = $(this).find('.champs'), 
 		ferror = false, 
 		emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
@@ -149,7 +149,7 @@ $(document).ready(function() {
 				if( !exp.test(i.val()) ){ ferror=ierror=true; }
 				break;
 			}
-				i.next('.validation').html( ( ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '' ) ).show('blind');
+				/*i.next('.validation').html( ( ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '' ) ).show('blind');*/
 			}
 		});
 		f.children('textarea').each(function(){ 
@@ -176,7 +176,7 @@ $(document).ready(function() {
 				if( i.val().length<parseInt(exp) ){ ferror=ierror=true; }
 				break;
 			}
-				i.next('.validation').html( ( ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '' ) ).show('blind');
+				/*i.next('.validation').html( ( ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '' ) ).show('blind');*/
 			}
 		});
 		if( ferror ) return false; 
