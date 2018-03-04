@@ -290,7 +290,7 @@ input, input[type=submit], textarea{
     bottom: 0;
     margin: auto;
 }
-.navbar .navbar-icon a:hover img {
+.navbar .navbar-icon:hover img {
     animation: moveTheWave 1.7s linear infinite;  
 	animation-fill-mode: both;
 }
