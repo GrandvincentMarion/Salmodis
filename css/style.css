@@ -397,6 +397,9 @@ input, input[type=submit], textarea{
     margin: 0 auto;
     display: inline-block;
 }
+#fp-nav .fp-nav__social ul li a {
+    pointer-events: none;
+}
 #fp-nav .fp-nav__dot ul li a span,
 #fp-nav .fp-nav__dot ul li:hover a span {
     height:0.69em;
@@ -1226,7 +1229,9 @@ input, input[type=submit], textarea{
     font-family: 'HelveticaNeue-Light';
     letter-spacing: 0.8px;
 }
-
+#contact_formulaire-section form .sendmessage {
+    display: none;
+}
 #contact_map-section .map-iframe {
     position: relative;
     padding-bottom: 40%;

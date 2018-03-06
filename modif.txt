@@ -1,12 +1,9 @@
 - gallery photo modifier icon
 - gallery photo 1 seule section
-- pointer carte map (en attente)
-- formulaire de contact 
-- iframe 100% mobile
-- separateur trait gris 
 - responsive gallery
-- responsive 1440px 
-- adresse mail ouverture boite
 - animation gallery photo
+
+- iframe 100% mobile
+- responsive 1440px 
 
 

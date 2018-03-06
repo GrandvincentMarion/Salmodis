@@ -216,6 +216,17 @@
         -moz-transform: translateY(0%);
         -webkit-transform: translateY(0%);        
     }
+    #homepage_entreprise-section:after {
+        content: "";
+        height: 1px;
+        width: 88%;
+        background-color: #d0d0cf;
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
     #homepage_produits-section .content{
         margin: 15% 0;
     }
@@ -245,6 +256,17 @@
     #homepage_entreprise-section .card p {
         margin: 10px 0 20px 0;
         line-height: 1.4;
+    }
+    #homepage_commentaires-section:after {
+        content: "";
+        height: 1px;
+        width: 88%;
+        background-color: #d0d0cf;
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
     #homepage_commentaires-section .commentaires-content .commentaires-name {
         margin-top: 2.5%;

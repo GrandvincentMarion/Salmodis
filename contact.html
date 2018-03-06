@@ -79,7 +79,7 @@
                                     <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Nos bureaux sont ouverts du lundi au vendredi de 7h à 17h.
                                     <br />
                                     Tel : 01 77 86 79 54<br />
-                                    email : salmodis@gmail.com
+                                    email : <a href="mailto:salmodis@gmail.com">salmodis@gmail.com</a>
                                     <br /><br />
                                     Le Marée Rungis ouvre ses portes du lundi au samedi.</p>
 
@@ -104,13 +104,15 @@
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                                 <div class="row">
-                                    <form action="" method="get" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                                    <form class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
                                         
                                         <div class="col-md-6 col-sm-6">
                                             <div class="row">
                                                 <div class="champs">
                                                     <label for="nom">Nom*</label>
-                                                    <input type="text" id="nom" required=""/>
+                                                    <input type="text" id="nom" name="nom" data-rule="required" required="" data-msg="Erreur"/>
+                                                    <div class="validation"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -118,7 +120,8 @@
                                             <div class="row">
                                                 <div class="champs">
                                                     <label for="prenom">Prénom*</label>
-                                                    <input type="text" id="prenom" required=""/>
+                                                    <input type="text" id="prenom" name="prenom" data-rule="required" required="" data-msg="Erreur"/>
+                                                    <div class="validation"></div>
                                                 </div>
                                             </div>
                                         </div>      
@@ -126,7 +129,8 @@
                                             <div class="row">
                                                 <div class="champs">
                                                     <label for="mail">Email*</label>
-                                                    <input type="email" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required=""/>
+                                                    <input type="email" id="mail" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" data-rule="required" required="" data-msg="Erreur"/>
+                                                    <div class="validation"></div>
                                                 </div>     
                                             </div>
                                         </div>                                
@@ -134,7 +138,8 @@
                                             <div class="row">
                                                 <div class="champs">
                                                     <label for="objet">Objet*</label>
-                                                    <input type="text" id="objet" required=""/>
+                                                    <input type="text" id="objet" name="objet" data-rule="required" required="" data-msg="Erreur"/>
+                                                    <div class="validation"></div>
                                                 </div>     
                                             </div>
                                         </div>
@@ -142,7 +147,8 @@
                                             <div class="row">
                                                 <div class="champs">
                                                     <label class="label-with-textarea" for="message">Message*</label>
-                                                    <textarea id="message" required=""></textarea>
+                                                    <textarea id="message" name="message" data-rule="required" required="" data-msg="Erreur"></textarea>
+                                                    <div class="validation"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -151,9 +157,9 @@
                                             <input type="submit" value="ENVOYER" />
                                         </div>
 
-                                        <div id="sendmessage"> Votre message à bien été envoyé. Merci ! </div>
+                                        <div class="sendmessage"> Votre message à bien été envoyé. Merci ! </div>
 
-                                        
+
                                     </form>
                                 </div>
                             </div>
