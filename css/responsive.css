@@ -101,6 +101,40 @@
         width: 70%;
         margin-bottom: 20px;
     }
+    #gallery_section .gallery-content .col-sm-h-33{ 
+        height: 33.33%;
+    }
+    #gallery_section .gallery-content .col-sm-h-50{ 
+        height: 50%;
+    }
+    #gallery_section .gallery-content .col-sm-h-25{ 
+        height: 25%;
+    }
+    #gallery_section .gallery-content .height-33 {
+        width: 33.33%;
+        height: 100%;
+        float: left;
+    }
+    button.mfp-arrow.mfp-arrow-right {
+        right: 0;
+    }
+    #gallery_section .gallery-content .col-sm-h-25 .height-50 {
+        width: 50%;
+        height: 100%;
+        float: left;        
+    }
+    #gallery_section .gallery-content .height-33 .gallery-photo img {
+        height: 100%;
+        width: auto;
+    }
+    #gallery_section .gallery-content .gallery-photo img {
+        height: auto;
+        width: 100%;
+    }
+    #gallery_section .gallery-content .gallery-photo img.height-100{
+        height: 100%;
+        width: auto;
+    }
     #contact_notre-equipe-section .card h6,
     #contact_notre-equipe-section .card p {
         padding: 0px 15px;
@@ -124,6 +158,14 @@
     #produits_fiches-produits-section .col-sm-12 .col-sm-10{
         width: 33.33333333%;
         margin-left: 0;
+    }
+    .header-img-page img.background {
+        height: auto;
+        width: 100%;
+    }
+    #gallery_section .gallery-content .gallery-photo img.height-100 {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -207,6 +249,9 @@
         -moz-transform: translateY(0%);
         -webkit-transform: translateY(0%);
         margin: 40% 0;
+    }
+    .fp-section.fp-table#homepage_header-section{
+        height: 670px !important;
     }
     #homepage_header-section .header-caption {
         position: relative;
@@ -311,12 +356,12 @@
         width: 33.33%;
         float: left;
     }
-    #gallery_section .gallery-content .height-50 {
-        width: 50%;
-        float: left;        
-    }
     #gallery_section .gallery-content .height-50.width-100 {
         width: 100%;
+    }
+    button.mfp-arrow.mfp-arrow-right,
+    button.mfp-close {
+        right: 0;
     }
     #contact_formulaire-section,
     #contact_map-section,

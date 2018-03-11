@@ -1,9 +1,3 @@
-- gallery photo modifier icon
-- gallery photo 1 seule section
-- responsive gallery
-- animation gallery photo
-
 - iframe 100% mobile
-- responsive 1440px 
 
 
