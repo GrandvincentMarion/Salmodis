@@ -1291,10 +1291,10 @@ input, input[type=submit], textarea{
     height: 100%;
     display: block;
     overflow: hidden;
-    transition: transform linear 3s;
-    -ms-transition: transform linear 3s;
-    -moz-transition: transform linear 3s;
-    -webkit-transition: transform linear 3s;
+    transition: transform linear 2s;
+    -ms-transition: transform linear 2s;
+    -moz-transition: transform linear 2s;
+    -webkit-transition: transform linear 2s;
 }
 #gallery_section .gallery-content .gallery-photo:before {
     content: "";
