@@ -1,6 +1,6 @@
 <?php
 
-$destinataire = 'grandvincent.marion@gmail.com';
+$destinataire = 'salmodis@gmail.com';
 $expediteur = 'www.salmodis.fr';
 //$copie = 'adresse@fai.com';
 //$copie_cachee = 'adresse@fai.com';

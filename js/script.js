@@ -253,7 +253,7 @@ window.addEventListener('resize', function(event){
 function fullSlideshow() {
     var background = document.querySelectorAll('.full-background img.background');
     if (background.length === 0) {
-    return
+        return
     }
     var backgroundLength = background.length
     var index = 0;
@@ -263,12 +263,12 @@ function fullSlideshow() {
     }, 40);
 
     setInterval(function(){
-        background[index].classList.remove('active')
+        background[index].classList.remove('active');
         index++
         if(index === backgroundLength) {
             index = 0
         }
-        background[index].classList.add('active')
+        background[index].classList.add('active');
     }, 5000);   
 }
 fullSlideshow()
@@ -368,3 +368,17 @@ $(document).ready(function() {
         });
     }
 });
+
+function initMap() {
+    var salmodis = {lat: 48.7504369, lng: 2.3525366999999733};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: salmodis
+    });
+    var image = './img/map-picto.svg';
+    var marker = new google.maps.Marker({
+        position: salmodis,
+        map: map,
+        icon: image
+    });
+}
