@@ -1,5 +1,9 @@
 wowAnime();
 
+function ftw(){
+    document.body.style.display='block';
+}
+
 $(document).ready(function() {
     
     var names = [];
@@ -206,6 +210,33 @@ $(document).ready(function() {
         return false;
 	});
 
+    // Gallery photo
+    if ( $('.gallery-content').length > 0 ) {
+        $('.gallery-content').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+                titleSrc: function(item) {
+                    return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+                }
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
+        });
+    }
+
 });
 
 
@@ -341,33 +372,7 @@ function formulaire() {
 formulaire()
 
 
-$(document).ready(function() {
-    if ( $('.gallery-content').length > 0 ) {
-        $('.gallery-content').magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            closeOnContentClick: false,
-            closeBtnInside: false,
-            mainClass: 'mfp-with-zoom mfp-img-mobile',
-            image: {
-                verticalFit: true,
-                titleSrc: function(item) {
-                    return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-                }
-            },
-            gallery: {
-                enabled: true
-            },
-            zoom: {
-                enabled: true,
-                duration: 300, // don't foget to change the duration also in CSS
-                opener: function(element) {
-                    return element.find('img');
-                }
-            }
-        });
-    }
-});
+
 
 function initMap() {
     var salmodis = {lat: 48.7504369, lng: 2.3525366999999733};

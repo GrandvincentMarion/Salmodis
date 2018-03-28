@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset='utf-8'>
+        <title>Salmodis</title>
+        <meta name='description' content='Salmodis est spécialisée dans les produits issus de l’aquaculture maritime et continentale. Nous sommes aussi une référence à Rungis en ce qui concerne les produits de salaison (saumon fumé, truite fumée & oeufs de truite...).'/>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel='stylesheet' href="css/jquery.fullpage.min.css">
+        <link rel='stylesheet' href='css/bootstrap.min.css'>
+        <link rel='stylesheet' href='css/animate.min.css'>
+        <link rel='stylesheet' href='css/style.css'>
+        <link rel='stylesheet' href='css/responsive.css'>
+        
+        
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+        <div class="navbar wow fadeInDown" data-wow-duration="1s">        
+            <div class="container">
+                <div class="row">
+                    <div class="menu-responsive visible-xs">
+                        <img src="img/cancel.png" alt="Salmodis est spécialisée dans les produits issus de l’aquaculture maritime et continentale">
+                    </div>
+
+                    <div class="col-md-1 col-md-offset-0 col-sm-1 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                        <div class="row">
+                            <div class="navbar-icon">
+                                <a href="./">
+                                    <img src="img/waves-menu.svg" alt="Salmodis est spécialisée dans les produits issus de l’aquaculture maritime et continentale">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-10 col-sm-10 hidden-xs"> 
+                        <div class="row">
+                            <ul class="menu">
+                                <li>
+                                    <a href="./">ACCUEIL</a>
+                                </li>                            
+                                <li>
+                                    <a href="produits.html">LES PRODUITS</a>
+                                </li>
+                                <li>
+                                    <a href="galerie-photo.html">GALERIE PHOTO</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="fullpage" class="index">
+
+            <div class="section" id="contact_header-section" data-name="Contact" data-anchor="information-contact">
+
+                <div class="header-img-page">
+                    <img class="background" src="img/header_les_produits.jpg" alt="Salmodis est spécialisée dans les produits issus de l’aquaculture maritime et continentale">
+                    <div class="header-title">
+                        <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">CONTACT</h1>
+                    </div>
+                </div>
+
+                <div class="content-header-img-page">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                <div class="row">
+                                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Nos bureaux sont ouverts du lundi au vendredi de 7h à 17h.
+                                    <br />
+                                    Tel : 01 77 86 79 54<br />
+                                    email : <a href="mailto:salmodis@gmail.com">salmodis@gmail.com</a>
+                                    <br /><br />
+                                    Le Marée Rungis ouvre ses portes du lundi au samedi.</p>
+
+                                    <div class="button wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                                        <a href="https://www.rungisinternational.com/plan-et-horaires/" target="_blank">Voir les horaires</a>
+                                    </div>       
+                                </div>                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="section" id="contact_formulaire-section" data-name="Prendre contact" data-anchor="prendre-contact">        
+                <div class="content">
+                    <div class="title-center in-section wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <h4>Une question ?</h4>
+                    </div>       
+
+                    <div class="container">           
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                <div class="row">
+
+                                    <form class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                        
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label for="nom">Nom*</label>
+                                                    <input type="text" id="nom" name="nom" data-rule="required" required="" data-msg="Erreur"/>
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label for="prenom">Prénom*</label>
+                                                    <input type="text" id="prenom" name="prenom" data-rule="required" required="" data-msg="Erreur"/>
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+                                        </div>      
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label for="mail">Email*</label>
+                                                    <input type="email" id="mail" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" data-rule="required" required="" data-msg="Erreur"/>
+                                                    <div class="validation"></div>
+                                                </div>     
+                                            </div>
+                                        </div>                                
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label for="objet">Objet*</label>
+                                                    <input type="text" id="objet" name="objet" data-rule="required" required="" data-msg="Erreur"/>
+                                                    <div class="validation"></div>
+                                                </div>     
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="row">
+                                                <div class="champs">
+                                                    <label class="label-with-textarea" for="message">Message*</label>
+                                                    <textarea id="message" name="message" data-rule="required" required="" data-msg="Erreur"></textarea>
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="champs">
+                                            <p>* Ces champs sont obligatoires</p>
+                                            <input type="submit" value="ENVOYER" />
+                                        </div>
+
+                                        <div class="sendmessage"> Votre message à bien été envoyé. Merci ! </div>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+
+            <!-- section Ou nous trouver -->
+            <div class="section" id="contact_map-section" data-name="Où nous trouver" data-anchor="nous-trouver">
+
+                <div class="content">  
+                    <div class="title-center in-section wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <h4>où nous<br class="hidden-lg hidden-md hidden-sm"> trouver</h4>
+                    </div>                      
+                    <div class="container">        
+                        <div class="row">
+
+                            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">  
+                                <div class="row">
+                                    <div class="map-iframe wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                                        <div id="map"></div>
+                                        
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>       
+
+            </div>
+
+
+            <!-- section A propos -->
+            <div class="section" id="contact_a-propos-section" data-name="À-propos" data-anchor="a-propos"> 
+
+                <div class="content">  
+                    <div class="title-center in-section wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <h4>à propos</h4>
+                    </div>                       
+                    <div class="container">        
+                        <div class="row">
+                                                                
+                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                <div class="row">
+                                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles, prêtes à repondre à toutes vos questions. Si vous venez la nuit, vous pouvez rencontrer Romain. Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité. Pour mener à bien notre mission, notre petite équipe se compose de deux charmantes jeunes filles, prêtes à repondre à toutes vos questions. Si vous venez la nuit, vous pouvez rencontrer Romain.</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- section Equipe -->
+            <div class="section" id="contact_notre-equipe-section" data-name="Notre équipe" data-anchor="notre-equipe">
+                <div class="content">    
+                <div class="title-center in-section wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                    <h4>L'équipe</h4>
+                </div>         
+                  
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                            <div class="row">
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="row">
+                                        <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="-150">
+                                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <img src="img/card-1.png" alt="Salmodis est spécialisée dans les produits issus de l’aquaculture maritime et continentale">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <h6>Pascal, <p>Gérant</p></h6>
+                                                    <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="row">
+                                        <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="-150">
+                                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <img src="img/card-2.png" alt="Salmodis est spécialisée dans les produits issus de l’aquaculture maritime et continentale">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <h6>Céline, <p>Responsable des ventes</p></h6>
+                                                    <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="row">                                
+                                        <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="-150">
+                                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <img src="img/card-3.png" alt="Salmodis est spécialisée dans les produits issus de l’aquaculture maritime et continentale">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <h6>Sophie, <p>Responsable de l’administration</p></h6>
+                                                    <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="row">   
+                                        <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="-150">
+                                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <img src="img/card-4.png" alt="Salmodis est spécialisée dans les produits issus de l’aquaculture maritime et continentale">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <h6>Romain, <p>Responsable de la logistique</p></h6>
+                                                    <p>Depuis plus de 40 ans, SALMODIS vous accompagne pour offrir du poisson d’élevage de haute qualité.</p>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>                             
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+            <!-- section Partenaire -->
+            <div class="section" id="contact_partenaires-section" data-name="Partenaires" data-anchor="partenaires"> 
+
+                <div class="content">   
+                    <div class="title-center in-section wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                        <h4>Nos<br class="hidden-lg hidden-md hidden-sm"> partenaires</h4>
+                    </div>   
+                    <div class="container">        
+                        <div class="row">                                
+                            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                                <div class="row">
+                                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Salmodis travaille avec des producteurs aquacoles français. La pisciculture de l’Andelle nous fournit l’équivalent de 150 tonnes à l’année en truite arc-en-ciel. La pisciculture de la Lieurre est spécilisée dans l’élevage d’alvins. Enfin, la saumonerie de l’Ourc de Picardie fume et tranche le saumon de manière artisale depuis plus de 50 ans.</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section FOOTER -->
+            <div class="section removeAnchor fp-auto-height fp-section" id="footer" data-name="Contact" data-anchor="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <h5>Menu</h5>
+                                    <ul>
+                                        <li>
+                                            <a href="./">Accueil</a>
+                                        </li>                                    
+                                        <li>
+                                            <a href="produits.html#produits-aquaculture-maritime">Les produits d'aquaculture</a>
+                                        </li>
+                                        <li>
+                                            <a href="produits.html#produits.html#produits-salaison">Les produits de salaison</a>
+                                        </li>                                       
+                                        <li>
+                                            <a href="galerie-photo.html">Galerie photos</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <h5>Contact</h5>
+                                    <p>SALMODIS, SA LE CREN</p>
+                                    <p>70C allée de Saint Malo</p>
+                                    <p>Marée 80115</p>
+                                    <p>94519 Rungis CEDEX</p>
+                                    <p class="num">Tel : 01 46 87 50 43</p>
+                                    <p>Fax : 01 46 87 83 87</p>
+                                    <p class="mail">Email : <a href="mailto:salmodis@gmail.com">salmodis@gmail.com</a></p>
+                                </div>
+
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <h5>Nos partenaires</h5>
+                                    <ul>
+                                        <li>La salmoniculture de l’Andelle</li>
+                                        <li>La salmoniculture de la Lieurre</li>
+                                        <li>La saumonerie de l’Ourq</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+                                    <div class="mention-legale">
+                                        <p>@Salmodis 2018</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src='js/jquery.fullpage.js'></script>
+        <script src='js/script.js'></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd2QuXFcmDSy55W4eaQyTfVSB0RDaVpjQ&callback=initMap">
+        </script>
+    </body>
+</html>                                                            

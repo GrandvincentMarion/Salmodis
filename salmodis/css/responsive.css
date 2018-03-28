@@ -1,0 +1,391 @@
+@media screen and (min-width: 1400px) {   
+    #fp-nav {
+        width: 55px;
+    }
+    .container {
+        width: 90%;
+    }
+    html {
+        font-size: 78.125%;
+    }
+    .header-img-page {
+        height: 40%;
+    }
+    .content-header-img-page {
+        top: 40%;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px){
+    h4 {
+        font-size: 2.8rem;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 992px){
+    .container {
+        width: 920px;
+    }
+    h2 {
+        font-size: 4.5rem;
+    }
+    h4 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .container {
+        width: 700px;
+    }
+    h1.big {
+        font-size: 10rem;
+    }
+    h2 {
+        font-size: 4.5rem;
+    }
+    [class*="col-"].float-right {
+        float: none;
+    }
+    .full-image img {
+        width: 100vw;
+        height: 50vh;
+    }
+    .header-img-page {
+        height: 30%;
+    }
+    .content-header-img-page {
+        top: 30%;
+    }
+    .header-img-page img.background {
+        height: 100%;
+        width: auto;
+    }
+    #homepage_produits-section .col-sm-12{
+        height: 50%;
+    }
+    #homepage_produits-section .caption-icon {
+        display: none;
+    }
+    #homepage_entreprise-section .card p {
+        margin-bottom: 3em;
+    }
+    #homepage_commentaires-section .commentaires-content .commentaires-name {
+        margin-top: 2.5%;
+    }
+    #homepage_commentaires-section .note {
+        margin-bottom: 5em;
+    }
+    #homepage_commentaires-section .note .note-star {
+        margin-top: 0;
+    }
+    #homepage_galerie-photo-section .galerie-slideshow {
+        height: 270px;
+    }
+    #homepage_galerie-photo-section .galerie-photo {
+        height: 20%;
+    }
+    #produits_fiches-produits-section p {
+        line-height: 1.7;
+    }
+    #produits_header-section .ancre-to-fiche-produit {
+        margin-bottom: 20px;
+    }
+    #produits_fiches-produits-section .produits_fiches-produits__img {
+        height: 110px;
+    }
+    #produits_fiches-produits-section .produits_fiches-produits__block {
+        padding: 4% 0px;
+    }
+    #contact_notre-equipe-section .card img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    #gallery_section .gallery-content .col-sm-h-33{ 
+        height: 33.33%;
+    }
+    #gallery_section .gallery-content .col-sm-h-50{ 
+        height: 50%;
+    }
+    #gallery_section .gallery-content .col-sm-h-25{ 
+        height: 25%;
+    }
+    #gallery_section .gallery-content .height-33 {
+        width: 33.33%;
+        height: 100%;
+        float: left;
+    }
+    button.mfp-arrow.mfp-arrow-right {
+        right: 0;
+    }
+    #gallery_section .gallery-content .col-sm-h-25 .height-50 {
+        width: 50%;
+        height: 100%;
+        float: left;        
+    }
+    #gallery_section .gallery-content .height-33 .gallery-photo img {
+        height: 100%;
+        width: auto;
+    }
+    #gallery_section .gallery-content .gallery-photo img {
+        height: auto;
+        width: 100%;
+    }
+    #gallery_section .gallery-content .gallery-photo img.height-100{
+        height: 100%;
+        width: auto;
+    }
+    #contact_notre-equipe-section .card h6,
+    #contact_notre-equipe-section .card p {
+        padding: 0px 15px;
+    }
+    #contact_notre-equipe-section .card h6 p {
+        padding: 0px 0px;
+    }
+    #footer ul li {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) and (max-height: 970px){
+    #produits_header-section .col-sm-12 .col-sm-8{
+        width: 33.33333333%;
+        margin-left: 0;
+    }
+    #produits_header-section .ancre-to-fiche-produit__titre h4 {
+        font-size: 2.25rem;
+    }
+    #produits_fiches-produits-section .col-sm-12 .col-sm-10{
+        width: 33.33333333%;
+        margin-left: 0;
+    }
+    .header-img-page img.background {
+        height: auto;
+        width: 100%;
+    }
+    #gallery_section .gallery-content .gallery-photo img.height-100 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {  
+    html {
+        padding-right: 0px !important;
+        overflow: visible !important;
+    }
+    h1.big {
+        font-size: 5.5rem;
+    }
+    h1 {
+        font-size: 4.5rem;
+        padding: 0px 30px;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    h4 {
+        font-size: 2.8rem;
+    }
+    
+    .button {
+        margin-top: 1em;
+    }
+    .navbar {
+        overflow: visible;
+    }
+    .navbar .navbar-icon {
+        float: left;
+    }
+    .content {
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    .title-center.in-section {
+        margin-bottom: 6%;
+    }
+    .title-center.in-section h4 {
+        padding: 0px 15px;
+    }
+    .full-image {
+        position: relative;
+    }
+    .full-image img {
+        width: 100%;
+        height: auto;
+    }
+    .fp-section.fp-table, 
+    .fp-slide.fp-table,
+    .fp-tableCell {
+       height: 100% !important;
+       display: block;
+        overflow: hidden;
+        table-layout: inherit;
+    }
+    .header-img-page {
+        position: relative;
+        height: 20em;
+    }
+    .header-img-page img.background {
+        height: 100%;
+        width: auto;
+    }
+    .content-header-img-page {
+        position: relative;
+        top: 0;
+    }
+    #homepage_header-section .header-title {
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        margin: 40% 0;
+    }
+    .fp-section.fp-table#homepage_header-section{
+        height: 670px !important;
+    }
+    #homepage_header-section .header-caption {
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);        
+    }
+    #homepage_entreprise-section:after {
+        content: "";
+        height: 1px;
+        width: 88%;
+        background-color: #d0d0cf;
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    #homepage_produits-section .content{
+        margin: 15% 0;
+    }
+    #homepage_header-section .header-caption .caption-txt p {
+        margin-bottom: 15px;
+    }
+    #homepage_produits-section .navbar-middle .navbar-icon,
+    #homepage_produits-section .caption-icon{
+        display: none;
+    }
+    #homepage_produits-section .nos-produits-d-aquaculture__menu {
+        width: 50%;
+    }
+    #homepage_produits-section .nos-produits-d-aquaculture__menu ul li {
+        margin: 0.5em 0;
+    }
+    #homepage_produits-section p {
+        margin-top: 1em;
+        padding: 0 5%;
+    }
+    #homepage_entreprise-section .card img {
+        width: 130px;
+    }
+    #homepage_entreprise-section .content {
+        padding: 15% 0 25% 0;
+    }
+    #homepage_entreprise-section .card p {
+        margin: 10px 0 20px 0;
+        line-height: 1.4;
+    }
+    #homepage_commentaires-section:after {
+        content: "";
+        height: 1px;
+        width: 88%;
+        background-color: #d0d0cf;
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    #homepage_commentaires-section .commentaires-content .commentaires-name {
+        margin-top: 2.5%;
+    }
+    #homepage_commentaires-section .note {
+        margin-bottom: 10%;
+    }
+    #homepage_commentaires-section .note .note-star {
+        margin-top: 5px;
+    }
+    #homepage_galerie-photo-section .galerie-txt {
+        margin-bottom: 40%;
+        margin-top: 20%;
+    }
+    #homepage_galerie-photo-section .galerie-photo {
+        height: 25%;
+    }
+    #produits_fiches-produits-section .title-center.in-section {
+        margin-top: 20%;
+    }
+    #produits_fiches-produits-section .produits_fiches-produits__block {
+        padding: 7% 0;
+    }
+    #produits_header-section .ancre-to-fiche-produit {
+        margin-bottom: 20px;
+    }
+    #produits_header-section .ancre-to-fiche-produit a {
+        margin: 0;
+    }
+    #gallery_section .gallery-content .gallery-photo img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        transform: translate(0%,0%);
+        -ms-transform: translate(0%,0%);
+        -moz-transform: translate(0%,0%);
+        -webkit-transform: translate(0%,0%);
+    }
+    #gallery_section .gallery-content .height-33 {
+        width: 33.33%;
+        float: left;
+    }
+    #gallery_section .gallery-content .height-50.width-100 {
+        width: 100%;
+    }
+    button.mfp-arrow.mfp-arrow-right,
+    button.mfp-close {
+        right: 0;
+    }
+    #contact_formulaire-section,
+    #contact_map-section,
+    #contact_a-propos-section,
+    #contact_notre-equipe-section,
+    #contact_partenaires-section {
+        margin: 20% 0;
+    }
+    #contact_notre-equipe-section .card img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    #contact_map-section .map-iframe {
+        margin-top: 5%;
+        padding-bottom: 100%;
+    }
+    #contact_formulaire-section form .champs input[type=submit] {
+        margin-top: 20px;
+    }
+    #footer h5 {
+        margin-bottom:10px;
+        margin-top: 30px;
+    }
+    #footer ul li {
+        padding-bottom: 5px;
+    }
+}
